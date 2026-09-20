@@ -15,6 +15,7 @@ Automatically synced LeetCode solutions using LeetHub 3.0.
 ## Array
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0046-permutations](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0046-permutations/) | Medium |
 | [1477-find-two-non-overlapping-sub-arrays-each-with-target-sum](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum/) | Medium |
 | [3483-unique-3-digit-even-numbers](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3483-unique-3-digit-even-numbers/) | Easy |
 ## Hash Table
@@ -50,4 +51,8 @@ Automatically synced LeetCode solutions using LeetHub 3.0.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [3498-reverse-degree-of-a-string](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3498-reverse-degree-of-a-string/) | Easy |
+## Backtracking
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0046-permutations](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0046-permutations/) | Medium |
 <!---LeetCode Topics End-->
