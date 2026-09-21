@@ -1,4 +1,4 @@
-//one of the shittiest description of questions along with the question itself, complicated for no fking reason but lets do it, CUZ WHAT CAN WE EVEN DO t_t
+//one of the shittiest description of questions along with the question itself, complicated for no fking reason but lets do it, CUZ WHAT CAN WE EVEN DO t_t(bahat behuda question, pakka bhul jaunga mujhe bhi pata hai sala)
 //dp on remainders + prefix tracking for subarrays
 class Solution {//so basically we have to find the total number of ways to pick prefix and suffix such that remaining subarray product % k gives x, but wait, removing prefix and suffix literally just leaves us with a subarray!! so the whole question is just asking: find how many non empty subarrays are there whose product % k gives remainder x, where x can be from 0 to k-1... and since n is like 10^5, doing n^2 brute force will give TLE obviously, so we will use dynamic programming / frequency count of remainders ending at each index to do this in O(n * k) time!!
     public long[] resultArray(int[] nums, int k) {
