@@ -32,7 +32,6 @@ class Solution {//so so see, another super clean way to validate BST is using IN
     
     //this prev node will store the previously visited node in our inorder sequence (Left -> Root -> Right)... initially null because for the very first smallest element at the extreme bottom left, there is no previous element to compare with!
     private TreeNode prev = null;
-
     public boolean isValidBST(TreeNode root) {
         //base case: if current root is null, it means we reached empty leaf or null branch, which obviously violates nothing... so return true!
         if (root == null) return true;
@@ -50,7 +49,6 @@ class Solution {//so so see, another super clean way to validate BST is using IN
         }
         //now current node becomes the previous node for the next guy in inorder traversal, so update prev to current root!
         prev = root;
-
         //3. NOW GO RIGHT:
         //after processing root, we now check the right subtree... whatever right subtree returns (true if all right nodes are valid, or false if any right node fails) will be our final result for this subtree!
         return isValidBST(root.right);
