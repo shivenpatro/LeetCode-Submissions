@@ -63,12 +63,14 @@ Automatically synced LeetCode solutions using LeetHub 3.0.
 | ------- | ------- |
 | [0098-validate-binary-search-tree](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0098-validate-binary-search-tree/) | Medium |
 | [0104-maximum-depth-of-binary-tree](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0104-maximum-depth-of-binary-tree/) | Easy |
+| [0114-flatten-binary-tree-to-linked-list](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0114-flatten-binary-tree-to-linked-list/) | Medium |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0236-lowest-common-ancestor-of-a-binary-tree/) | Medium |
 ## Depth-First Search
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0098-validate-binary-search-tree](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0098-validate-binary-search-tree/) | Medium |
 | [0104-maximum-depth-of-binary-tree](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0104-maximum-depth-of-binary-tree/) | Easy |
+| [0114-flatten-binary-tree-to-linked-list](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0114-flatten-binary-tree-to-linked-list/) | Medium |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0236-lowest-common-ancestor-of-a-binary-tree/) | Medium |
 ## Breadth-First Search
 | Problem Name | Difficulty |
@@ -79,6 +81,7 @@ Automatically synced LeetCode solutions using LeetHub 3.0.
 | ------- | ------- |
 | [0098-validate-binary-search-tree](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0098-validate-binary-search-tree/) | Medium |
 | [0104-maximum-depth-of-binary-tree](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0104-maximum-depth-of-binary-tree/) | Easy |
+| [0114-flatten-binary-tree-to-linked-list](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0114-flatten-binary-tree-to-linked-list/) | Medium |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0236-lowest-common-ancestor-of-a-binary-tree/) | Medium |
 ## Binary Lifting
 | Problem Name | Difficulty |
@@ -92,4 +95,12 @@ Automatically synced LeetCode solutions using LeetHub 3.0.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0098-validate-binary-search-tree](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0098-validate-binary-search-tree/) | Medium |
+## Linked List
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0114-flatten-binary-tree-to-linked-list](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0114-flatten-binary-tree-to-linked-list/) | Medium |
+## Stack
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0114-flatten-binary-tree-to-linked-list](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0114-flatten-binary-tree-to-linked-list/) | Medium |
 <!---LeetCode Topics End-->
