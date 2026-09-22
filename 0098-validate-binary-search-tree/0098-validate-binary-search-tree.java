@@ -13,6 +13,7 @@
  *     }
  * }
  */
+ /*
 class Solution {
     public boolean isValidBST(TreeNode root) {
         return check(root, Long.MIN_VALUE, Long.MAX_VALUE);
@@ -24,5 +25,34 @@ class Solution {
         boolean rightsubtreecheck = check(node.right, node.val, maxofrange);//NOW FOR RIGHT, EVERY VALUE TO THE RIGHT MUST  BE LARGER THAN THE CURRENT ROOT!!.. so os,... we will define the smaller ... like minofrange na?  because we want everything to be bigger than this root.val... and we dc about the max... whtever the max that has been passed from above will go on... lets do a dry run
         //5 comes... 1 is called with 1,-infinite,5...passed...after that nothing so 5 receives true from down... 5 calls on right... 4 goes with 4,5,infinite... min of  the range is 5 and range is 5 to infinite where 4 doesnt lie!!!.. so  false is returned directly to 5.. which does true(from left) && false(from right) and false is returned
         return leftsubtreecheck && rightsubtreecheck; //just the final check so that we make sure all the trues are coming, even a single false will return false to the calling function 
+    }
+}*/
+//inorder traversal property method to check valid BST!!
+class Solution {//so so see, another super clean way to validate BST is using INORDER TRAVERSAL!! why?? because we know for a fact that inorder of any binary search tree is ALWAYS strictly increasing sorted order, like 1, 2, 3, 4, 5... so instead of making a whole arraylist and then checking if its sorted (which takes extra O(n) memory and doesn't even exit early), we just keep a single global pointer 'prev' which remembers the last node we visited in the inorder sequence!! and compare it on the fly...
+    
+    //this prev node will store the previously visited node in our inorder sequence (Left -> Root -> Right)... initially null because for the very first smallest element at the extreme bottom left, there is no previous element to compare with!
+    private TreeNode prev = null;
+
+    public boolean isValidBST(TreeNode root) {
+        //base case: if current root is null, it means we reached empty leaf or null branch, which obviously violates nothing... so return true!
+        if (root == null) return true;
+
+        //1. FIRST GO LEFT (Inorder: Left -> Root -> Right):
+        //we call isValidBST on left child first because we need to visit the smallest elements first... and if ANY node inside left subtree fails the BST condition, it returns false, so (!isValidBST(root.left)) triggers and we immediately return false without even checking right side!!
+        if (!isValidBST(root.left)) return false;
+
+        //2. PROCESS ROOT (The actual sorted check):
+        //now we are at the current node... if prev is not null (meaning this is NOT the very first node of inorder), then current node.val MUST be strictly greater than prev.val!!
+        //if root.val <= prev.val (meaning it is smaller OR even equal, because BST doesn't allow duplicates), then the ascending order is broken bro!! so immediately return false!
+        //and see, the beauty of this is we don't even need Long.MIN_VALUE or Long.MAX_VALUE here, because we compare directly with actual node values, so no Integer.MIN_VALUE edge case issues at all!!
+        if (prev != null && root.val <= prev.val) {
+            return false;
+        }
+        //now current node becomes the previous node for the next guy in inorder traversal, so update prev to current root!
+        prev = root;
+
+        //3. NOW GO RIGHT:
+        //after processing root, we now check the right subtree... whatever right subtree returns (true if all right nodes are valid, or false if any right node fails) will be our final result for this subtree!
+        return isValidBST(root.right);
     }
 }
