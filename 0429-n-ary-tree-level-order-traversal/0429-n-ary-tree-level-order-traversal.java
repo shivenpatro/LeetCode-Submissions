@@ -16,7 +16,7 @@ class Node {
     }
 };
 */
-/*
+
 // bro so basically what we are doing here is... everyone does level order using queue and BFS iteratively na.. 
 // but we can do it recursively using DFS itself!! (DFS)
 // just imagine.. our answer is a list of lists: List<List<Integer>>... where index 0 stores all nodes of level 0, index 1 stores level 1, index 2 stores level 2, and so on...
@@ -55,7 +55,7 @@ class Solution {
 }
 //now bfs iterative one
 /*
-*/
+
 // okay now the classic iterative BFS queue approach.. here unlike the dfs one where we were cheating with levels and indexing into buckets while diving deep.. here we ACTUALLY go level by level horizontally left to right in pure BFS style!! so how do we do that? simple, we use a Queue because queue is FIFO (first in first out)... we put the root first, and then in each step we see how many guys are currently sitting in the queue (thats our level size!!), we take that many guys out one by one, put their values in a current level list, and while taking them out we dump all their children into the queue for the NEXT level!! so by the time this inner loop finishes, that entire level is completely processed and the queue ONLY has nodes of the next level!! loop keeps running untill queue is empty and boom level order is done!!
 class Solution {
     public List<List<Integer>> levelOrder(Node root) {
@@ -79,4 +79,4 @@ class Solution {
         }
         return ans;// finally return the level order list of lists, fully sorted level by level from left to right!
     }
-}
+}*/
