@@ -13,6 +13,7 @@
  *     }
  * }
  */
+ /*
 //optimal morris traversal approach spcae O(1) time O(n)
 class Solution{
     public void flatten(TreeNode root){
@@ -28,9 +29,9 @@ class Solution{
             curr = curr.right;//now this is the most imp shit... whtever we did above, we have to keep doing it... we wil have to move the curr from root to curr.right(which will be 2 now since we did curr.right = curr.left as well!!), it might be confusing, but before explaining, lemme explain in siomple manner....curr is 1... prev comes to 4(which is right right right of the left subtree for 1).. 4.right points to 5 and 1.right points to 2...1.left is null, now curr becomes 2(curr = curr.right(1.right is 2)), now again repeat for node 2...curr is 2...prev is curr.left which is 3.. 3 has no child so prev is 3... 3.right points to curr.right!! 2.right is 4!! so 3 points to 4!...curr.right = curr.left...2.right = 2.left(which is 3..) so 2 points to 3.. current flow...1->2->3->4->5->6... now curr = curr.right.. curr becomes 3 ..3.left == null..wont run..curr becomes 3.right which is 4.. so curr becomes 4.. curr becomes 5..(because none have left child only) and curr becomes 6..then curr becomes null..answer is done
         }
     }
-}
+}*/
 
-/* 
+
 // what we are technically doing in this question is that, we have to flatten the tree into a linked list in pre-order order right... meaning root -> left -> right...
 // but the trick is, if we do normal pre-order from the front, as soon as we change root.right to point to left, we will lose the original right subtree completely... , like see see,... there was a small tree 1 as root, 1.left as 4 and 1.right as 5.. we want 1->4->5... so now if we right 1.right directlly as 1.left..1->4 is formed but that link  of 1->5 is gone forever!! thats the issue we have to fix
 // so the intuition here is: why not traverse in reverse pre-order?! meaning right -> left -> root... kind of reverse post-order!
@@ -54,7 +55,7 @@ class Solution {
         // so update prev to this root, so the parent node above us can attach its right to us!
         prev = root;
     }
-}*/
+}
 
 /*
 ================================================================================
