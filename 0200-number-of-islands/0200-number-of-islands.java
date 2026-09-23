@@ -57,7 +57,7 @@ class Solution {
     }
 
     public void bfs(int start_i, int start_j, char[][] grid) {
-        Queue<int[]> q = new LinkedList<>();// queue stores coordinate pairs [row, col]
+        Queue<int[]> q = new LinkedList<>();// queue stores coordinate pairs [row, col], its not one thing na... i mean each node or point is noted by row and col, so we need to store both in queue, and use both, to move in directions obv.. in provinces we just stored the v node cuz that was represending single node, here node is represented by 2 coordinates
         q.offer(new int[]{start_i, start_j});
         grid[start_i][start_j] = '$';// mark visited immediately upon offering to prevent duplicate additions!!
 
