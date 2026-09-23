@@ -1,3 +1,4 @@
+//dfs approach  
 class Solution {
     int n;//global level so it can be usewd in all the functions
     public int findCircleNum(int[][] isConnected) {
