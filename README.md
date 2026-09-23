@@ -73,11 +73,13 @@ Automatically synced LeetCode solutions using LeetHub 3.0.
 | [0104-maximum-depth-of-binary-tree](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0104-maximum-depth-of-binary-tree/) | Easy |
 | [0114-flatten-binary-tree-to-linked-list](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0114-flatten-binary-tree-to-linked-list/) | Medium |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0236-lowest-common-ancestor-of-a-binary-tree/) | Medium |
+| [0547-number-of-provinces](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0547-number-of-provinces/) | Medium |
 ## Breadth-First Search
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0104-maximum-depth-of-binary-tree](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0104-maximum-depth-of-binary-tree/) | Easy |
 | [0429-n-ary-tree-level-order-traversal](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0429-n-ary-tree-level-order-traversal/) | Medium |
+| [0547-number-of-provinces](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0547-number-of-provinces/) | Medium |
 ## Binary Tree
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -105,4 +107,12 @@ Automatically synced LeetCode solutions using LeetHub 3.0.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0114-flatten-binary-tree-to-linked-list](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0114-flatten-binary-tree-to-linked-list/) | Medium |
+## Union-Find
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0547-number-of-provinces](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0547-number-of-provinces/) | Medium |
+## Graph Theory
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0547-number-of-provinces](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0547-number-of-provinces/) | Medium |
 <!---LeetCode Topics End-->
