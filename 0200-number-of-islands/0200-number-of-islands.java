@@ -1,5 +1,5 @@
 //dfs approach
-class Solution {
+/*class Solution {
     int m,n;//global level declare
     int[][] directions ={{-1,0},{1,0},{0,-1},{0,1}};
     public int numIslands(char [][] grid) {
@@ -25,6 +25,59 @@ class Solution {
             int new_i = i + dir[0];//just the new i and new j formed which will be passed .. 
             int new_j = j+ dir[1];//just first down, then up then left then right... all calls will happen in the recursion.. it will go deepre deeper deeper.. because its dfs!!
             dfs( new_i,  new_j, grid);
+        }
+    }
+} */
+
+// now solving the exact same problem using BFS!!
+// same outer nested loops.. whenever we spot grid[i][j] == '1', increment count++ and start BFS from (i, j)!!
+// inside BFS, we push coordinates {i, j} into a Queue<int[]> and mark grid[i][j] as visited immediately!!
+// then standard while(!q.isEmpty()), poll front coordinate, check its 4 adjacent neighbors (up, down, left, right)...
+// if neighbor is within grid bounds and grid[new_i][new_j] == '1', mark it visited right away and push to queue!!
+// once queue empties, the whole connected island is submerged/visited, and we resume scanning the grid!!
+class Solution {
+    int m, n;
+    int[][] directions = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
+
+    public int numIslands(char[][] grid) {
+        if (grid == null || grid.length == 0) return 0;
+
+        m = grid.length;
+        n = grid[0].length;
+        int count = 0;
+
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if (grid[i][j] == '1') {
+                    count++;
+                    bfs(i, j, grid);// start BFS for this island
+                }
+            }
+        }
+        return count;
+    }
+
+    public void bfs(int start_i, int start_j, char[][] grid) {
+        Queue<int[]> q = new LinkedList<>();// queue stores coordinate pairs [row, col]
+        q.offer(new int[]{start_i, start_j});
+        grid[start_i][start_j] = '$';// mark visited immediately upon offering to prevent duplicate additions!!
+
+        while (!q.isEmpty()) {
+            int[] curr = q.poll();
+            int r = curr[0];
+            int c = curr[1];
+
+            // check all 4 neighbors
+            for (int[] dir : directions) {
+                int new_r = r + dir[0];
+                int new_c = c + dir[1];
+
+                // check boundary and if the neighbor is connected land
+                if (new_r >= 0 && new_r < m && new_c >= 0 && new_c < n && grid[new_r][new_c] == '1') {
+                    grid[new_r][new_c] = '$';// mark visited immediately!!
+                    q.offer(new int[]{new_r, new_c});// push to queue to process next
+                }
+            }
         }
     }
 }
