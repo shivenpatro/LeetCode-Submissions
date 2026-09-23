@@ -37,12 +37,11 @@
 // once queue empties, the whole connected island is submerged/visited, and we resume scanning the grid!!
 class Solution {
     int m, n;
-    int[][] directions = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
+    int[][] directions = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};//the 2d directions array, same as dfs
 
     public int numIslands(char[][] grid) {
-        if (grid == null || grid.length == 0) return 0;
-
-        m = grid.length;
+        if (grid == null || grid.length == 0) return 0;//simple same edge case check
+        m = grid.length;//same row count for tis and n is the col count
         n = grid[0].length;
         int count = 0;
 
@@ -50,7 +49,7 @@ class Solution {
             for (int j = 0; j < n; j++) {
                 if (grid[i][j] == '1') {
                     count++;
-                    bfs(i, j, grid);// start BFS for this island
+                    bfs(i, j, grid);// start BFS for this island, because 1 means unvisited
                 }
             }
         }
