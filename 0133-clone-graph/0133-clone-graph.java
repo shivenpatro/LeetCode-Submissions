@@ -17,7 +17,7 @@ class Node {
     }
 }
 */
-
+/*
 class Solution {
     HashMap<Node, Node> map = new HashMap<>();//this will keep the track of which nodes are cloned
     public Node cloneGraph(Node node) {
@@ -147,3 +147,42 @@ C4.neighbors = [C1, C3]
 A 100% deep-copied identical graph with completely fresh memory addresses!
 ========================================================================================================
 */
+
+//bfs approach
+// now doing clone graph using BFS with a standard Queue!!
+// logic is identical conceptually: we still need the HashMap<Node, Node> to map original -> clone and act as visited check!!
+// we clone the starting node, put it in map, and push the ORIGINAL starting node into Queue<Node>..
+// inside while(!q.isEmpty()), we poll the current original node curr..
+// we look at all neighbors n of curr:
+// if neighbor n is NOT in map yet:
+//   1. create its clone: new Node(n.val)
+//   2. register in map: map.put(n, clone)
+//   3. push the ORIGINAL neighbor n into queue so we can process its neighbors later!!
+// whether it was already in map or newly created, we just do map.get(curr).neighbors.add(map.get(n))!!
+// this connects the cloned nodes together!! once queue empties, the whole deep copy is ready!!
+class Solution {
+    HashMap<Node,Node> map = new HashMap<>();//to keep the record of the nodes which are already cloned
+    public Node cloneGraph(Node node) {
+        if(node == null) return null;///simple base and edge case check
+        Node clonenode = new Node(node.val);//creating the clone of  the first node coming
+        map.put(node,clonenode);//making the note and tracking so since clone was made, first thing is to add it to map to make sure we dont duplicate clone creation
+        Queue<Node> q = new LinkedList<>();//queue defination
+        q.offer(node);//now see see.. what we are doing is... basic simple bfs we will do... but like.. we use the nodes of actual graph to make clones on fly.. its like we do simple bfs traversal on original graph.. same push pop push neighbor and all.. and if anything is not there in map, we make clone of it then and there and add it to neighbor of the eearlier above clonednode.. which was popped!! because currently we are at the neighbor of that popped on na!! so make clone of neighbor and join this clone to the neighbor of the clonenode(this is the clone of the node which was popped).. so like both clones are connected like its connected in the real graph
+        while(!q.isEmpty()){//basic queue traversal, we have to travers untill the queue is empty na..  pop the start one and then add its neighbors by piushhing its neighbors to the queue
+            Node start = q.poll();//poll the first node in the queue
+            for(Node s : start.neighbors){//explore all the nodes in the neighbor to the start.. like we polled it.. now we explore the neighbors and check if its in map then clone is made.. just add it.. if not there in map.. we need to make clone.. we need ot join the clone to this start, and then we need to add to queue as well!! because it was never made or explored na.. but if its made then its already in queue or explored.. so just add to clone neighbor for making the edge connections
+                if(!map.containsKey(s)){
+                    //map doesnt have that node
+                    Node clone = new Node(s.val);//making the clone of it
+                    map.put(s,clone);//tracking it  and marking that it was created and put in queue for exploration as well
+                    q.offer(s);//most imp thing, we add the original and not the clones cuz obv.. original is full made, clones we make on the fly.. originals we traverse and clones are made and connected on the fly
+                    map.get(start).neighbors.add(clone);//getting the clone of start and adding this clone(which is clone of s), and add it to the clone of start
+                }
+                else{
+                    map.get(start).neighbors.add(map.get(s));//now see.. if the clone is already made that means... we can directly get the clone of start and add to that clone of s(which exists) and join both simple
+                }   
+            }
+        }
+        return clonenode;
+    }
+}
