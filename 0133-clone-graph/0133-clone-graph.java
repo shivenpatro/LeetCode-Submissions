@@ -187,3 +187,135 @@ class Solution {
         return clonenode;
     }
 }
+/*
+========================================================================================================
+FULL LINE-BY-LINE STEP-BY-STEP TRACE FOR BFS (4-NODE CYCLE EXAMPLE):
+Original Graph: 1 <--> 2 <--> 3 <--> 4 <--> 1
+Neighbors:
+1: [2, 4]
+2: [1, 3]
+3: [2, 4]
+4: [1, 3]
+========================================================================================================
+
+1. INITIALIZATION:
+   - Call cloneGraph(node = 1)
+   - Node 1 is not null.
+   - Create: Node clonenode = new Node(1) -> let's call it C1 (Clone of 1).
+   - map.put(1, C1) -> Map is now: { 1: C1 }
+   - Queue<Node> q = new LinkedList<>()
+   - q.offer(1) -> Queue state: [ 1 ]
+
+--------------------------------------------------------------------------------------------------------
+2. ITERATION 1 (Processing Node 1):
+   - !q.isEmpty() is TRUE.
+   - Node start = q.poll() -> start = 1. Queue is now: [ ]
+   - We inspect neighbors of 1: [2, 4].
+
+   --> NEIGHBOR s = 2:
+       - !map.containsKey(2) is TRUE (2 is fresh, not cloned yet!).
+       - Create: Node clone = new Node(2) -> C2.
+       - map.put(2, C2) -> Map is now: { 1: C1, 2: C2 }
+       - q.offer(2) -> Queue is now: [ 2 ]
+       - map.get(1).neighbors.add(C2) -> Edge drawn: C1 --> C2!!
+
+   --> NEIGHBOR s = 4:
+       - !map.containsKey(4) is TRUE (4 is fresh, not cloned yet!).
+       - Create: Node clone = new Node(4) -> C4.
+       - map.put(4, C4) -> Map is now: { 1: C1, 2: C2, 4: C4 }
+       - q.offer(4) -> Queue is now: [ 2, 4 ]
+       - map.get(1).neighbors.add(C4) -> Edge drawn: C1 --> C4!!
+
+   - Finished neighbors of 1.
+   - Current State:
+     * Queue: [ 2, 4 ]
+     * Clones built: C1.neighbors = [ C2, C4 ]
+
+--------------------------------------------------------------------------------------------------------
+3. ITERATION 2 (Processing Node 2):
+   - !q.isEmpty() is TRUE.
+   - Node start = q.poll() -> start = 2. Queue is now: [ 4 ]
+   - We inspect neighbors of 2: [1, 3].
+
+   --> NEIGHBOR s = 1:
+       - !map.containsKey(1) is FALSE (1 is already in map as C1!).
+       - Hits ELSE branch:
+       - map.get(2).neighbors.add(map.get(1)) -> adds C1 into C2's neighbors!
+       - Edge drawn: C2 --> C1!! (Both directions C1 <--> C2 are now connected!).
+       - NOTE: 1 is NOT added to the queue because it was already visited/cloned!
+
+   --> NEIGHBOR s = 3:
+       - !map.containsKey(3) is TRUE (3 is fresh, not cloned yet!).
+       - Create: Node clone = new Node(3) -> C3.
+       - map.put(3, C3) -> Map is now: { 1: C1, 2: C2, 3: C3, 4: C4 }
+       - q.offer(3) -> Queue is now: [ 4, 3 ]
+       - map.get(2).neighbors.add(C3) -> Edge drawn: C2 --> C3!!
+
+   - Finished neighbors of 2.
+   - Current State:
+     * Queue: [ 4, 3 ]
+     * Clones built: C2.neighbors = [ C1, C3 ]
+
+--------------------------------------------------------------------------------------------------------
+4. ITERATION 3 (Processing Node 4):
+   - !q.isEmpty() is TRUE.
+   - Node start = q.poll() -> start = 4. Queue is now: [ 3 ]
+   - We inspect neighbors of 4: [1, 3].
+
+   --> NEIGHBOR s = 1:
+       - !map.containsKey(1) is FALSE (1 is already in map as C1!).
+       - Hits ELSE branch:
+       - map.get(4).neighbors.add(map.get(1)) -> adds C1 into C4's neighbors!
+       - Edge drawn: C4 --> C1!! (Cycle closure edge!).
+       - Not pushed to queue.
+
+   --> NEIGHBOR s = 3:
+       - !map.containsKey(3) is FALSE (3 was already cloned as C3 during Node 2's iteration!).
+       - Hits ELSE branch:
+       - map.get(4).neighbors.add(map.get(3)) -> adds C3 into C4's neighbors!
+       - Edge drawn: C4 --> C3!!
+       - Not pushed to queue.
+
+   - Finished neighbors of 4.
+   - Current State:
+     * Queue: [ 3 ]
+     * Clones built: C4.neighbors = [ C1, C3 ]
+
+--------------------------------------------------------------------------------------------------------
+5. ITERATION 4 (Processing Node 3):
+   - !q.isEmpty() is TRUE.
+   - Node start = q.poll() -> start = 3. Queue is now: [ ]
+   - We inspect neighbors of 3: [2, 4].
+
+   --> NEIGHBOR s = 2:
+       - !map.containsKey(2) is FALSE (2 is already in map as C2!).
+       - Hits ELSE branch:
+       - map.get(3).neighbors.add(map.get(2)) -> adds C2 into C3's neighbors!
+       - Edge drawn: C3 --> C2!! (Both directions C2 <--> C3 are now connected!).
+
+   --> NEIGHBOR s = 4:
+       - !map.containsKey(4) is FALSE (4 is already in map as C4!).
+       - Hits ELSE branch:
+       - map.get(3).neighbors.add(map.get(4)) -> adds C4 into C3's neighbors!
+       - Edge drawn: C3 --> C4!! (Both directions C3 <--> C4 are now connected!).
+
+   - Finished neighbors of 3.
+   - Current State:
+     * Queue: [ ] (Empty!)
+     * Clones built: C3.neighbors = [ C2, C4 ]
+
+--------------------------------------------------------------------------------------------------------
+6. TERMINATION & RETURN:
+   - while(!q.isEmpty()) check fails because queue is now empty.
+   - BFS loop ends.
+   - Return clonenode (C1).
+
+FINAL RECONSTRUCTED CLONE GRAPH:
+C1.neighbors = [C2, C4]
+C2.neighbors = [C1, C3]
+C4.neighbors = [C1, C3]
+C3.neighbors = [C2, C4]
+
+Every node has fresh memory references, all bidirectional edges are preserved, and queue cycle loops were prevented!
+========================================================================================================
+*/
