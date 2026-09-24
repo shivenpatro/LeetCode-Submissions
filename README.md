@@ -79,6 +79,7 @@ Automatically synced LeetCode solutions using LeetHub 3.0.
 | [0200-number-of-islands](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0200-number-of-islands/) | Medium |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0236-lowest-common-ancestor-of-a-binary-tree/) | Medium |
 | [0547-number-of-provinces](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0547-number-of-provinces/) | Medium |
+| [1971-find-if-path-exists-in-graph](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/1971-find-if-path-exists-in-graph/) | Easy |
 ## Breadth-First Search
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -88,6 +89,7 @@ Automatically synced LeetCode solutions using LeetHub 3.0.
 | [0429-n-ary-tree-level-order-traversal](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0429-n-ary-tree-level-order-traversal/) | Medium |
 | [0547-number-of-provinces](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0547-number-of-provinces/) | Medium |
 | [0994-rotting-oranges](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0994-rotting-oranges/) | Medium |
+| [1971-find-if-path-exists-in-graph](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/1971-find-if-path-exists-in-graph/) | Easy |
 ## Binary Tree
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -120,11 +122,13 @@ Automatically synced LeetCode solutions using LeetHub 3.0.
 | ------- | ------- |
 | [0200-number-of-islands](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0200-number-of-islands/) | Medium |
 | [0547-number-of-provinces](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0547-number-of-provinces/) | Medium |
+| [1971-find-if-path-exists-in-graph](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/1971-find-if-path-exists-in-graph/) | Easy |
 ## Graph Theory
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0133-clone-graph](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0133-clone-graph/) | Medium |
 | [0547-number-of-provinces](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0547-number-of-provinces/) | Medium |
+| [1971-find-if-path-exists-in-graph](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/1971-find-if-path-exists-in-graph/) | Easy |
 ## Matrix
 | Problem Name | Difficulty |
 | ------- | ------- |
