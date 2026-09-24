@@ -179,7 +179,8 @@ class Solution {
                     map.get(start).neighbors.add(clone);//getting the clone of start and adding this clone(which is clone of s), and add it to the clone of start
                 }
                 else{
-                    map.get(start).neighbors.add(map.get(s));//now see.. if the clone is already made that means... we can directly get the clone of start and add to that clone of s(which exists) and join both simple
+                    map.get(start).neighbors.add(map.get(s));//now see.. if the clone is already made that means... we can directly get the clone of start and add to that clone of s(which exists) and join both simple,// connect the clone of start to the clone of neighbor s(which is neighbor of start)!!
+                    // map.get(start) gives start's clone, map.get(s) gives neighbor's clone
                 }   
             }
         }
