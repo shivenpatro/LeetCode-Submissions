@@ -19,7 +19,7 @@
 //        * just append it straight to result!!
 //    - Increment i++ and keep moving forward!!
 // 4. Return result.toString()!!
-class Solution {
+/*class Solution {
     public String evaluate(String s, List<List<String>> knowledge) {
         Map<String, String> map = new HashMap<>();
         for(List<String> pair : knowledge){
@@ -46,5 +46,73 @@ class Solution {
             }
         }
         return result.toString();//conversion of stringbuilder to string
+    }
+}*/
+
+//approach 2
+// now doing the second approach using a simple boolean flag 'isBracketOpen'!!
+// why this approach?
+// instead of writing an inner while loop to capture the bracket content,
+// we just do a SINGLE pass and build the key on the fly using a state flag!!
+//
+// STEP-BY-STEP GAME PLAN (APPROACH 2):
+// 1. Maintain a boolean flag 'isBracketOpen = false' and a temporary StringBuilder 'temp'!!
+// 2. Loop through every character in string 's':
+//    - If ch == '(':
+//        * turn flag ON: isBracketOpen = true!!
+//        * from now on, upcoming characters belong to the key!
+//    - Else if ch == ')':
+//        * turn flag OFF: isBracketOpen = false!!
+//        * the key inside 'temp' is complete! Look it up in map and append value (or "?") to result!!
+//        * reset temp.setLength(0) so it's clean and ready for the next bracket!!
+//    - Else (it's an alphabet):
+//        * if isBracketOpen is TRUE: this letter is part of a key, so append to 'temp'!!
+//        * if isBracketOpen is FALSE: this letter is just a normal char, so append straight to 'result'!!
+// 3. Return result.toString()!! Clean, linear, and no nested loops!!
+
+class Solution {
+    public String evaluate(String s, List<List<String>> knowledge) {
+        // step 1: store knowledge in map for O(1) lookups
+        Map<String, String> map = new HashMap<>();
+        for (List<String> pair : knowledge) {
+            map.put(pair.get(0), pair.get(1));
+        }
+
+        StringBuilder result = new StringBuilder(); // our final evaluated string
+        StringBuilder temp = new StringBuilder();   // accumulates the key inside brackets on the fly
+        boolean isBracketOpen = false;              // tracks whether we are currently inside '(' and ')'
+
+        // step 2: single pass loop over every character
+        for (int i = 0; i < s.length(); i++) {
+            char ch = s.charAt(i);
+
+            if (ch == '(') {
+                // bracket just opened, so turn the flag true!!
+                isBracketOpen = true;
+            } else if (ch == ')') {
+                // bracket just closed!! our key is fully collected inside temp!!
+                isBracketOpen = false;
+                String key = temp.toString();
+
+                // check if key exists in map, if yes add value else add "?"
+                if (map.containsKey(key)) {
+                    result.append(map.get(key));
+                } else {
+                    result.append("?");
+                }
+
+                temp.setLength(0); // empty the temp buffer for upcoming bracket keys
+            } else {
+                // normal alphabet character
+                if (isBracketOpen) {
+                    // we are inside brackets, so this character belongs to the key!!
+                    temp.append(ch);
+                } else {
+                    // we are outside brackets, so this character belongs directly to final result!!
+                    result.append(ch);
+                }
+            }
+        }
+        return result.toString();
     }
 }
