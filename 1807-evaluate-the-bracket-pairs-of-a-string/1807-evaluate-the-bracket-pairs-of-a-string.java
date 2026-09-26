@@ -1,4 +1,5 @@
-// bro so basically what we are doing here is:
+//approach 1
+// so basically what we are doing here is:
 // we are given a string 's' that contains some bracket pairs like "(name)" or "(age)"!!
 // inside the brackets there is a 'key' and we are given a 2D list 'knowledge' with [key, value] pairs!!
 // we need to replace each "(key)" with its corresponding value from knowledge!!
