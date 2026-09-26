@@ -116,3 +116,66 @@ class Solution {
         return result.toString();
     }
 }
+
+/*//approach 3
+// now doing the third approach: using built-in indexOf(')') to jump directly!!
+// why this approach?
+// this is super concise: whenever we see '(', we don't manually iterate character by character!!
+// we just tell Java: "find me the index of the next closing bracket ')' after my current position"!!
+//
+// STEP-BY-STEP GAME PLAN (APPROACH 3):
+// 1. Maintain pointer 'i' starting at 0.
+// 2. Loop while i < n:
+//    - If s.charAt(i) == '(':
+//        * find closing bracket index 'j' directly using s.indexOf(')', i + 1)!!
+//        * extract the exact key using s.substring(i + 1, j)!!
+//        * append mapped value (or "?") to result!!
+//        * JUMP pointer directly: i = j!! (this skips the entire bracketed word in one go!!)
+//    - Else:
+//        * regular character, just append to result!!
+//    - Do i++ at the end of every iteration!!
+// 3. Return result.toString()!!
+
+class Solution {
+    public String evaluate(String s, List<List<String>> knowledge) {
+        // step 1: build our map from knowledge list
+        Map<String, String> map = new HashMap<>();
+        for (List<String> pair : knowledge) {
+            map.put(pair.get(0), pair.get(1));
+        }
+
+        StringBuilder result = new StringBuilder();
+        int n = s.length();
+        int i = 0;
+
+        // step 2: traverse using index jumping
+        while (i < n) {
+            char ch = s.charAt(i);
+
+            if (ch == '(') {
+                // find the closing bracket index 'j' directly starting search from i + 1
+                int j = s.indexOf(')', i + 1);
+
+                // extract the key sitting right between i and j
+                String key = s.substring(i + 1, j);
+
+                // check if key exists in map and append accordingly
+                if (map.containsKey(key)) {
+                    result.append(map.get(key));
+                } else {
+                    result.append("?");
+                }
+
+                // jump our pointer straight to j so we don't re-traverse the key!
+                i = j;
+            } else {
+                // regular character, add straight to result
+                result.append(ch);
+            }
+
+            i++; // move past current character (or past ')' after jump)
+        }
+
+        return result.toString();
+    }
+}*/
