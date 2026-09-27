@@ -20,31 +20,31 @@
 
 class Solution{
     public String reverseParentheses(String s) {
-        StringBuilder result = new StringBuilder(); // builds our result string on the fly
-        Stack<Integer> lastSkipLength = new Stack<>(); // stores how many characters to skip before reversing
+        StringBuilder result = new StringBuilder(); // builds our result string on the fly, this is literally the final result string after all the reversals
+        Stack<Integer> lastSkipLength = new Stack<>(); // now see, this will keep the track of all the open bracket locations like where where they were found(EXCLUDING PREV BRACKETS OBV), like that, so how it will do is,... from left to right we keep pushing to the result string, and the moment we reach a opening bracket, we push the result.length at that exact point to the stack, WHICH IMPLY  KEEPS TRACK HOW MANY CHARACTERS ARE THERE BEFORE THAT EXACT OPENING BRACKET, so that we can later reverse the string from begin(0 or literal start value)+this value(THIS BRING THE START POINT TO OPNE BRACK) to end(where closing bracket was found), and thus that substring will get reversed
         for (int i = 0; i < s.length(); i++) {
             char ch = s.charAt(i);
             if (ch == '(') {
                 // bracket opens: store current length of result in stack so we know where this bracket's content starts
-                lastSkipLength.push(result.length());
+                lastSkipLength.push(result.length());//this  is the length of number of characters before this opening brackets(characters  means only alphabets no other brackets obv)
             } else if (ch == ')') {
                 // bracket closes: pop the skip length L
-                int l = lastSkipLength.pop();
+                int l = lastSkipLength.pop();//because on the top of the stack, this value will represent how much far from 0 is the beginning of the opening bracket.. for this exact closing bracket where ch==) became true... then we call the reverse funciton we have made(java doesnt have one.. to go from one custom index to another.. stringbuilder reverse() reverse the whole stringbuilder so ya)
                 // reverse result from index 'l' to result.length() - 1
                 reverse(result, l, result.length() - 1);
             } else {
                 // regular character, blindly append to result
-                result.append(ch);
+                result.append(ch);//simple  appending.. keep on going 
             }
         }
-        return result.toString();
+        return result.toString();//final answer
     }
     // helper function to reverse a section of StringBuilder between start and end indices
     private void reverse(StringBuilder sb, int start, int end) {
-        while (start < end) {
+        while (start < end) {//basic reverse algo
             char temp = sb.charAt(start);
-            sb.setCharAt(start, sb.charAt(end));
-            sb.setCharAt(end, temp);
+            sb.setCharAt(start, sb.charAt(end));//we use setCharAt... to reverse and set the characters.. like setCharAt start with setCharAt end
+            sb.setCharAt(end, temp);//and setCharAt  end with temp(which has setCharAt start)
             start++;
             end--;
         }
