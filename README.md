@@ -54,6 +54,7 @@ Automatically synced LeetCode solutions using LeetHub 3.0.
 ## String
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [1190-reverse-substrings-between-each-pair-of-parentheses](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/1190-reverse-substrings-between-each-pair-of-parentheses/) | Medium |
 | [1807-evaluate-the-bracket-pairs-of-a-string](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/1807-evaluate-the-bracket-pairs-of-a-string/) | Medium |
 | [3498-reverse-degree-of-a-string](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3498-reverse-degree-of-a-string/) | Easy |
 ## Simulation
@@ -120,6 +121,7 @@ Automatically synced LeetCode solutions using LeetHub 3.0.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0114-flatten-binary-tree-to-linked-list](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0114-flatten-binary-tree-to-linked-list/) | Medium |
+| [1190-reverse-substrings-between-each-pair-of-parentheses](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/1190-reverse-substrings-between-each-pair-of-parentheses/) | Medium |
 ## Union-Find
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -137,4 +139,8 @@ Automatically synced LeetCode solutions using LeetHub 3.0.
 | ------- | ------- |
 | [0200-number-of-islands](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0200-number-of-islands/) | Medium |
 | [0994-rotting-oranges](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0994-rotting-oranges/) | Medium |
+## Bracket Sequences
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1190-reverse-substrings-between-each-pair-of-parentheses](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/1190-reverse-substrings-between-each-pair-of-parentheses/) | Medium |
 <!---LeetCode Topics End-->
