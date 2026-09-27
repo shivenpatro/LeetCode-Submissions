@@ -1,3 +1,71 @@
+//optimal
+// now the OPTIMAL O(n) solution using the "Wormhole / Teleportation" technique!!
+// WHY DOES THIS WORK?
+// think about what happens when you reverse a word inside brackets:
+// normally you read left-to-right (L -> R)..
+// but the moment you hit '(', instead of reading the inside characters straight, you should read them backwards (R -> L)!!
+// and where does the backward reading start from? from its matching CLOSING bracket ')'!!
+// so:
+// 1. whenever you hit '(', teleport directly to its matching ')' and flip your walking direction!!
+// 2. whenever you hit ')', teleport directly to its matching '(' and flip your walking direction!!
+// 3. regular characters are just printed as you walk past them!!
+//
+// STEP-BY-STEP GAME PLAN (APPROACH 2):
+// 1. FIRST PASS (Precompute matching bracket pairs):
+//    - we use an array door[] of size n.
+//    - run a loop over s:
+//      * if '(', push its index into a stack.
+//      * if ')', pop the opening index 'j'.
+//      * create a two-way teleportation door: door[i] = j and door[j] = i!!
+// 2. SECOND PASS (Walk, Teleport & Collect):
+//    - start pointer i = 0 with direction flag = 1 (moving left-to-right).
+//    - while i is within bounds (0 <= i < n):
+//      * if s.charAt(i) is '(' or ')':
+//          - teleport: i = door[i]!! (jump instantly to the partner bracket!)
+//          - flip direction: flag = -flag!! (if going forward, now go backward; if backward, go forward!)
+//      * else (it's a regular letter):
+//          - append s.charAt(i) to our result StringBuilder!!
+//      * move i forward by direction: i += flag!!
+// 3. Return result.toString()!! Linear O(n) time, no repeated string reversals!!
+class Solution {
+    public String reverseParentheses(String s) {
+        int n = s.length();// length of string s
+        int[] door = new int[n]; // so see this is like doraemon's anywhere door array, door[i] will store where you land when you jump from index i.. basically matching index of bracket at index i
+        Stack<Integer> openBrackets = new Stack<>(); // stack to store the indices of open brackets so that whenever a closing bracket comes, we can map both to each other
+        // Step 1: first pass to link every '(' to its matching ')' and vice-versa (two-way teleportation door)
+        for (int i = 0; i < n; i++) {
+            char ch = s.charAt(i);
+            if (ch == '(') {
+                // found opening bracket, so push its index to stack to match with future closing bracket
+                openBrackets.push(i);
+            } else if (ch == ')') {
+                // found closing bracket, pop the top of stack which is the nearest matching open bracket index
+                int j = openBrackets.pop();
+                door[i] = j; // from ')' at index i we can jump to '(' at index j
+                door[j] = i; // from '(' at index j we can jump to ')' at index i.. two way mapping done simple!
+            }
+        }
+        StringBuilder result = new StringBuilder(); // this will build our final answer string without brackets
+        int flag = 1; // direction flag: +1 means we are walking left-to-right, -1 means right-to-left
+        int i = 0; // our moving pointer
+        // Step 2: second pass.. walk through the string and whenever bracket comes, teleport and flip direction!
+        while (i >= 0 && i < n) {
+            char ch = s.charAt(i);
+            if (ch == '(' || ch == ')') {
+                // see see, whenever we hit ANY bracket (either open or close), we need to jump to its partner bracket!
+                i = door[i];   // teleport directly to the matching bracket index using our door array!
+                flag = -flag;  // flip direction!! if we were going forward (+1), now go backward (-1).. if backward, now forward! because entering/leaving bracket inverts the reading order!
+            } else {
+                // regular lowercase english letter, not a bracket, so blindly add to result
+                result.append(ch);
+            }
+            i += flag; // move pointer one step in the CURRENT direction (if flag is +1 it does i++, if flag is -1 it does i--)
+        }
+        return result.toString(); // all brackets handled and proper reversed string collected in O(n) time!
+    }
+}
+
+/*
 //brute approach for O(n2)
 // so basically what we are doing here is:
 // we are given a string 's' with lowercase english letters and parentheses like "(u(love)i)"!!
@@ -49,4 +117,4 @@ class Solution{
             end--;
         }
     }
-}
+}*/
