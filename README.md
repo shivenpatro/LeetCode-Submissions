@@ -21,6 +21,7 @@ Automatically synced LeetCode solutions using LeetHub 3.0.
 | [0994-rotting-oranges](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0994-rotting-oranges/) | Medium |
 | [1477-find-two-non-overlapping-sub-arrays-each-with-target-sum](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum/) | Medium |
 | [1807-evaluate-the-bracket-pairs-of-a-string](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/1807-evaluate-the-bracket-pairs-of-a-string/) | Medium |
+| [2267-check-if-there-is-a-valid-parentheses-string-path](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/2267-check-if-there-is-a-valid-parentheses-string-path/) | Hard |
 | [3483-unique-3-digit-even-numbers](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3483-unique-3-digit-even-numbers/) | Easy |
 | [3524-find-x-value-of-array-i](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3524-find-x-value-of-array-i/) | Medium |
 ## Hash Table
@@ -46,6 +47,7 @@ Automatically synced LeetCode solutions using LeetHub 3.0.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1477-find-two-non-overlapping-sub-arrays-each-with-target-sum](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum/) | Medium |
+| [2267-check-if-there-is-a-valid-parentheses-string-path](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/2267-check-if-there-is-a-valid-parentheses-string-path/) | Hard |
 | [3524-find-x-value-of-array-i](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3524-find-x-value-of-array-i/) | Medium |
 ## Sliding Window
 | Problem Name | Difficulty |
@@ -141,9 +143,11 @@ Automatically synced LeetCode solutions using LeetHub 3.0.
 | ------- | ------- |
 | [0200-number-of-islands](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0200-number-of-islands/) | Medium |
 | [0994-rotting-oranges](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0994-rotting-oranges/) | Medium |
+| [2267-check-if-there-is-a-valid-parentheses-string-path](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/2267-check-if-there-is-a-valid-parentheses-string-path/) | Hard |
 ## Bracket Sequences
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1190-reverse-substrings-between-each-pair-of-parentheses](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/1190-reverse-substrings-between-each-pair-of-parentheses/) | Medium |
 | [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/1614-maximum-nesting-depth-of-the-parentheses/) | Easy |
+| [2267-check-if-there-is-a-valid-parentheses-string-path](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/2267-check-if-there-is-a-valid-parentheses-string-path/) | Hard |
 <!---LeetCode Topics End-->
