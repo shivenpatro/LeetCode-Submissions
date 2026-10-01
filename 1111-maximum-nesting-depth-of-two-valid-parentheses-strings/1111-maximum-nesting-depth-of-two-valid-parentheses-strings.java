@@ -6,7 +6,7 @@ class Solution {
         for(int i = 0;i<n;i++){
             char c = seq.charAt(i);
             if(c=='('){//watch cwm video for easy viwsualization + understanding
-                d++;//so since we found a open bracket we increase the depth tahts all.. simple, because depth means number of open bracket in contiguous manner
+                d++;//so since we found a open bracket we increase the depth tahts all.. simple, Depth is simply the current balance of unmatched opening parentheses at any point: $\text{count}('(') - \text{count}(')')$.
                 res[i] = d%2;//now very simple and normal shit see, to minimize the max nested depth out of both groups(means we have to divide the string into 2 groups and then find the max of the depth for both groups... and we have to try to minimize it as much as possible...we have to minimize  the max(depth of group1, depth of group2)), and best way to do is do equal division.. 1 to grp 1 ... 1 to group 2 like that.. so so.. if d(depth) is even, add  it to 0 group... or else add to odd group(thats why d%2 direct.. cuz even means direct gone to group 0 only)
             }
             else{
