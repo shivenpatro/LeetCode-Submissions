@@ -46,6 +46,7 @@ Automatically synced LeetCode solutions using LeetHub 3.0.
 ## Dynamic Programming
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0022-generate-parentheses](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0022-generate-parentheses/) | Medium |
 | [1477-find-two-non-overlapping-sub-arrays-each-with-target-sum](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum/) | Medium |
 | [2267-check-if-there-is-a-valid-parentheses-string-path](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/2267-check-if-there-is-a-valid-parentheses-string-path/) | Hard |
 | [3524-find-x-value-of-array-i](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3524-find-x-value-of-array-i/) | Medium |
@@ -56,6 +57,7 @@ Automatically synced LeetCode solutions using LeetHub 3.0.
 ## String
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0022-generate-parentheses](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0022-generate-parentheses/) | Medium |
 | [1111-maximum-nesting-depth-of-two-valid-parentheses-strings](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/1111-maximum-nesting-depth-of-two-valid-parentheses-strings/) | Medium |
 | [1190-reverse-substrings-between-each-pair-of-parentheses](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/1190-reverse-substrings-between-each-pair-of-parentheses/) | Medium |
 | [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/1614-maximum-nesting-depth-of-the-parentheses/) | Easy |
@@ -68,6 +70,7 @@ Automatically synced LeetCode solutions using LeetHub 3.0.
 ## Backtracking
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0022-generate-parentheses](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0022-generate-parentheses/) | Medium |
 | [0046-permutations](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0046-permutations/) | Medium |
 ## Tree
 | Problem Name | Difficulty |
@@ -149,6 +152,7 @@ Automatically synced LeetCode solutions using LeetHub 3.0.
 ## Bracket Sequences
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0022-generate-parentheses](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0022-generate-parentheses/) | Medium |
 | [1111-maximum-nesting-depth-of-two-valid-parentheses-strings](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/1111-maximum-nesting-depth-of-two-valid-parentheses-strings/) | Medium |
 | [1190-reverse-substrings-between-each-pair-of-parentheses](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/1190-reverse-substrings-between-each-pair-of-parentheses/) | Medium |
 | [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/1614-maximum-nesting-depth-of-the-parentheses/) | Easy |
