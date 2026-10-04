@@ -1,20 +1,33 @@
 //stack approach
-/*class Solution{
-    public int longestValidParentheses(String s){
-        int n = s.length();
-        Deque<Integer> dq = new ArrayDeque<>();
-        int count = 0;
-        int result = Integer.MIN_VALUE;
-        for(int i = 0; i<n; i++){
-            char c = s.charAt(i)
-            if(c=='('){
-                dq.push(c);//so if its open we push that to stack
-                count++;
+class Solution {
+    public int longestValidParentheses(String s) {
+        Deque<Integer> stack = new ArrayDeque<>();
+        // Push -1 as the initial boundary/sentinel index
+        stack.push(-1);
+        int maxLen = 0;
+
+        for (int i = 0; i < s.length(); i++) {
+            char ch = s.charAt(i);
+
+            if (ch == '(') {
+                stack.push(i);
+            } else {
+                stack.pop();
+
+                if (stack.isEmpty()) {
+                    // No matching '(': this index becomes the new boundary
+                    stack.push(i);
+                } else {
+                    // Valid substring spans from (stack.peek() + 1) to i
+                    maxLen = Math.max(maxLen, i - stack.peek());
+                }
             }
         }
-    }
-}*/
 
+        return maxLen;
+    }
+}
+/*
 //open close counter approach
 class Solution {
     public int longestValidParentheses(String s) {
@@ -57,4 +70,4 @@ class Solution {
         }
         return result;
     }
-}
+}*/
