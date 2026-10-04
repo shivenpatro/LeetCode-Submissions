@@ -5,7 +5,6 @@ class Solution {
         // Push -1 as the initial boundary/sentinel index
         stack.push(-1);
         int maxLen = 0;
-
         for (int i = 0; i < s.length(); i++) {
             char ch = s.charAt(i);
 
@@ -13,7 +12,6 @@ class Solution {
                 stack.push(i);
             } else {
                 stack.pop();
-
                 if (stack.isEmpty()) {
                     // No matching '(': this index becomes the new boundary
                     stack.push(i);
@@ -23,7 +21,6 @@ class Solution {
                 }
             }
         }
-
         return maxLen;
     }
 }
