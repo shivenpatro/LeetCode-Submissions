@@ -1,3 +1,20 @@
+//stack approach
+/*class Solution{
+    public int longestValidParentheses(String s){
+        int n = s.length();
+        Deque<Integer> dq = new ArrayDeque<>();
+        int count = 0;
+        int result = Integer.MIN_VALUE;
+        for(int i = 0; i<n; i++){
+            char c = s.charAt(i)
+            if(c=='('){
+                dq.push(c);//so if its open we push that to stack
+                count++;
+            }
+        }
+    }
+}*/
+
 //open close counter approach
 class Solution {
     public int longestValidParentheses(String s) {
@@ -21,6 +38,7 @@ class Solution {
         }
         open = 0;
         close = 0;//once we are done with left to right, we need to do right to left so we reset, and again we do both traversal because, to protect from cases like, if test case is  ((), then see open will be 1 then 2.. and then close is 1.. so see.. answer shouldhv been 2.. but answer will be 0 because open == close NEVER HAPPENED!!..this case is saved by right to left traversal.. and exact opposite for ()).. this is saved  by left to right traversal
+        //2. right to left traversal now, to cover the edge cases like ((), as explained above
         for(int i = n-1; i>=0 ; i--){
             char c = s.charAt(i);
             if (c == '(') {
@@ -34,7 +52,7 @@ class Solution {
             if(close>open) continue;//btw u can remove this conditoin itslef because it dpoesnt do a shit but i added for understanding
             if(open>close) {
                 open = 0;
-                close = 0;//same as left to right onw.. if more open that means no close  cnan balance this open one
+                close = 0;//same as left to right now.. if more open that means no close  cnan balance this open one
             }
         }
         return result;
