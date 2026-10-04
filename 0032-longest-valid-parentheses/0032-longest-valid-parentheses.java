@@ -1,5 +1,5 @@
 //stack approach
-class Solution {
+/*class Solution {
     public int longestValidParentheses(String s) {
         Deque<Integer> stack = new ArrayDeque<>();
         // Push -1 as the initial boundary/sentinel index
@@ -7,7 +7,6 @@ class Solution {
         int maxLen = 0;
         for (int i = 0; i < s.length(); i++) {
             char ch = s.charAt(i);
-
             if (ch == '(') {
                 stack.push(i);
             } else {
@@ -23,8 +22,8 @@ class Solution {
         }
         return maxLen;
     }
-}
-/*
+}*/
+
 //open close counter approach
 class Solution {
     public int longestValidParentheses(String s) {
@@ -67,4 +66,4 @@ class Solution {
         }
         return result;
     }
-}*/
+}
