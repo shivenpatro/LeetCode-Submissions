@@ -1,0 +1,42 @@
+class Solution {
+    public int scoreOfParentheses(String s) {
+        int n = s.length();//length of the string
+        // stack here because as we go deeper into nested brackets, we need to save whatever score
+        // we accumulated at the current outer level before diving inside...
+        // and once that inner part finishes calculating, we pop that outer score back and combine them simple
+        Stack<Integer> st = new Stack<>();
+        int score = 0;//this will maintain the score of the current level/block we are currently exploring
+        for (int i = 0; i < n; i++) {
+            char ch = s.charAt(i);
+            if (ch == '(') {
+                // see... whenever we see an opening bracket, it means a brand new frame or nested level is starting!
+                // so whatever score we had computed till now at the current level... we must push it into the stack to save it!
+                // and then reset score to 0 so this new inner subproblem can start calculating from fresh 0
+                st.push(score);
+                score = 0;
+            } else {
+                // else branch means we found a closing bracket ')'
+                // now there are 2 possibilities according to the problem statement:
+                // Case 1: is it the simplest base unit "()"?
+                // Case 2: or is it wrapping a whole nested block "(A)"?
+                
+                if (s.charAt(i - 1) == '(') {
+                    // CASE 1: BASE CORE UNIT "()"!
+                    // see... if current is ')' and just previous at i-1 was '('... that means this is directly "()"!
+                    // problem clearly says "()" has an exact score of 1.
+                    // so whatever score was sitting on top of the stack from before... we pop it and just add +1 to it!
+                    score = st.pop() + 1;
+                } else {
+                    // CASE 2: NESTED STRUCTURE "(A)"!
+                    // see... if i-1 was also ')', that means we just finished closing an entire nested block inside!
+                    // and rule 3 says "(A)" has a score of 2 * score(A)...
+                    // so the inner score that was accumulated gets multiplied by 2...
+                    // and then we pop whatever was waiting outside in the stack before this block started and add them up!
+                    score = st.pop() + 2 * score;
+                }
+            }
+        }
+        // by the time the loop ends, all levels are popped and combined into score... so return it
+        return score;
+    }
+}
