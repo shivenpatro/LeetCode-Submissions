@@ -1,35 +1,28 @@
 class Solution {
     public int scoreOfParentheses(String s) {
         int n = s.length();
-        
         // THIS APPROACH IS PURE OBSERVATION AND RUNS IN O(1) AUXILIARY SPACE!
         // see... think carefully: where does the actual raw score even come from?
         // it ONLY comes from the innermost "()" pairs!
         // all other outer brackets are literally just multipliers of 2!
-        //
         // just trace it:
         // "()"       -> score is 1, which is 2^0
         // "(())"     -> score is 2 * 1 = 2, which is 2^1
         // "((()))"   -> score is 2 * (2 * 1) = 4, which is 2^2
-        //
         // so see the pattern... if a basic core pair "()" is enclosed inside 'd' outer layers of brackets,
         // its total contribution to the final sum is simply 2^d!
         // and instead of doing Math.pow(2, d) which is slow and floating point...
         // we can just use bitwise left shift: (1 << d) which gives 2^d directly in O(1)!
-        
         int score = 0;//stores total accumulated score
         int depth = 0;//tracks how many levels deep inside parentheses we currently are
-        
         for (int i = 0; i < n; i++) {
             char ch = s.charAt(i);
-            
             if (ch == '(') {
                 // whenever we see '(', we are stepping one level deeper inside... so depth++
                 depth++;
             } else {
                 // whenever we see ')', one level is ending... so decrement depth first
                 depth--;
-                
                 // now this is the main trick:
                 // check if this closing bracket immediately follows an opening bracket!
                 // if s.charAt(i - 1) == '(', it means we just completed an atomic core "()" pair!
@@ -44,7 +37,6 @@ class Solution {
                 // its doubling effect was already naturally included in the 2^depth calculation of the inner pairs!
             }
         }
-        
         return score;//final total score
     }
 }
