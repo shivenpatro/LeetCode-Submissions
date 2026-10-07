@@ -60,6 +60,7 @@ Automatically synced LeetCode solutions using LeetHub 3.0.
 | ------- | ------- |
 | [0022-generate-parentheses](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0022-generate-parentheses/) | Medium |
 | [0032-longest-valid-parentheses](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0032-longest-valid-parentheses/) | Hard |
+| [0301-remove-invalid-parentheses](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0301-remove-invalid-parentheses/) | Hard |
 | [0856-score-of-parentheses](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0856-score-of-parentheses/) | Medium |
 | [0921-minimum-add-to-make-parentheses-valid](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0921-minimum-add-to-make-parentheses-valid/) | Medium |
 | [1111-maximum-nesting-depth-of-two-valid-parentheses-strings](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/1111-maximum-nesting-depth-of-two-valid-parentheses-strings/) | Medium |
@@ -76,6 +77,7 @@ Automatically synced LeetCode solutions using LeetHub 3.0.
 | ------- | ------- |
 | [0022-generate-parentheses](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0022-generate-parentheses/) | Medium |
 | [0046-permutations](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0046-permutations/) | Medium |
+| [0301-remove-invalid-parentheses](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0301-remove-invalid-parentheses/) | Hard |
 ## Tree
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -101,6 +103,7 @@ Automatically synced LeetCode solutions using LeetHub 3.0.
 | [0104-maximum-depth-of-binary-tree](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0104-maximum-depth-of-binary-tree/) | Easy |
 | [0133-clone-graph](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0133-clone-graph/) | Medium |
 | [0200-number-of-islands](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0200-number-of-islands/) | Medium |
+| [0301-remove-invalid-parentheses](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0301-remove-invalid-parentheses/) | Hard |
 | [0429-n-ary-tree-level-order-traversal](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0429-n-ary-tree-level-order-traversal/) | Medium |
 | [0547-number-of-provinces](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0547-number-of-provinces/) | Medium |
 | [0994-rotting-oranges](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0994-rotting-oranges/) | Medium |
