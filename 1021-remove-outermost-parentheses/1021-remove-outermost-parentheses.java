@@ -1,5 +1,6 @@
 //super duper easy question once you understand the description actually, its just bunch of bs writte seems like rando maths... but it just means... remove the outermost brackets of a primitive parenthese string... now what it means na ki... simply like we always do  +1 for seeing open bracket and -1 for seeing close bracket na...so so na see... when the count is 0... we dont add... and when count is not 0..we add it...LMAO THATS IT THATHS ENOUGH TO SOLVE THIS QUESTION LOL....
-class Solution {
+
+/*class Solution {
     public String removeOuterParentheses(String s) {
         int n = s.length();
         int count = 0;//the main thing... which keeps the record of balance pairs na.. like in the way of doing +1 -1... its keeping track of open adn close brackets in just 1 variable
@@ -23,5 +24,27 @@ class Solution {
             }
         } 
         return result;       
+    }
+}*/
+
+//stringbuilder for faster  
+class Solution {
+    public String removeOuterParentheses(String s) {
+        StringBuilder result = new StringBuilder();
+        int count = 0;
+        for (char c : s.toCharArray()) {
+            if (c == '(') {
+                if (count != 0) {
+                    result.append(c);
+                }
+                count++;
+            } else {
+                count--;
+                if (count != 0) {
+                    result.append(c);
+                }
+            }
+        }
+        return result.toString();
     }
 }
