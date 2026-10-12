@@ -1,4 +1,5 @@
 /*
+//runs o(k) so TLE
 //brute approach first, with priority queue, to reduce the time comp, like see, technically what tf are we even doing..  we doing have to care about k1 and k2 and all that.. see we have to care aobut the total number of reductions we can do thats all... because at the end the only thing we care about is teh "difference tahts all"
 class Solution{
     public long minSumSquareDiff(int[] nums1, int nums2[], int k1, int k2){
@@ -50,7 +51,7 @@ class Solution {
         for (int d : diff) {
             countDiff[d]++;
         }
-        // now see... the key intuition from MIK's video:
+        // now see... the key idea is
         // instead of decrementing one by one like in the heap...
         // we process the largest difference level by level in BULK!
         for (int currentDiff = maxDiff; currentDiff > 0 && k > 0; currentDiff--) {
