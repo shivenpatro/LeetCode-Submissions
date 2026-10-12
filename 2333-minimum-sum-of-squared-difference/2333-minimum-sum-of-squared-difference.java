@@ -42,12 +42,12 @@ class Solution {
         int maxDiff = 0;
         int[] diff = new int[n];
         for (int i = 0; i < n; i++) {
-            diff[i] = Math.abs(nums1[i] - nums2[i]);
-            maxDiff = Math.max(maxDiff, diff[i]);
+            diff[i] = Math.abs(nums1[i] - nums2[i]);//it stores the differences for concurrent indices of both the arrays... thats all.. its difference array
+            maxDiff = Math.max(maxDiff, diff[i]);//tracks the maxdiff amongst the diff array
         }
         // countDiff array acts as a frequency map (counting sort technique)
         // countDiff[d] stores how many pairs currently have an absolute difference equal to 'd'
-        int[] countDiff = new int[maxDiff + 1];
+        int[] countDiff = new int[maxDiff + 1];//so see see... instead of hardcoding and making of length 10^5... it will waste space na.. so we find the biggest difference and define an array of that length simple, and then we make a new countdiff array where we store the frequency of each difference till maxdiff in that array
         for (int d : diff) {
             countDiff[d]++;
         }
@@ -59,12 +59,12 @@ class Solution {
             // how many operations can we actually perform at this level?
             // it's the minimum of:
             // 1. how many elements exist at this diff level (countDiff[currentDiff])
-            // 2. our remaining operations budget (k)
+            // 2. our remaining operations budget (k), like simple thing is.. since we have the count and we have the value which we will reduce na.. like imagine maxdiff is 4.. and 4 comes 3 times.. so we make all 3 4s to 3 na.. it will cost how much? k=3 obv.. cuz we did -1 -1 -1 na.... but k should have the budge of greater than 3 for that... so we find min... of count[thatdiff],k
             long ops = Math.min((long) countDiff[currentDiff], k);
             // all 'ops' elements of size currentDiff drop down to (currentDiff - 1)!
             countDiff[currentDiff] -= (int) ops;//frequency of currentDiff decreases
-            countDiff[currentDiff - 1] += (int) ops;//frequency of (currentDiff - 1) increases
-            k -= ops;//deduct the operations we just used
+            countDiff[currentDiff - 1] += (int) ops;//frequency of (currentDiff - 1) increases, simple shit think... there were 3 4s.., all 4s became 3.. so so see.. countdiff of 4 was 3.. which becomes 0(because ops will come 3 na), and 3 3s got added... so that has to be added
+            k -= ops;//deduct the operations we just used, reduce the operations from k
             // note: if k didn't finish all elements at currentDiff, k is now 0 and loop terminates cleanly!
         }
         // now simply compute the sum of squares:
@@ -73,7 +73,7 @@ class Solution {
         for (int d = 1; d <= maxDiff; d++) {
             if (countDiff[d] > 0) {
                 // use long casting to avoid 32-bit integer overflow!
-                result += (long) countDiff[d] * ((long) d * d);
+                result += (long) countDiff[d] * ((long) d * d);//sum of square of differences na... so we are adding d square countdiff times... thats all.. if 3 is 3times there.. we have to do what? 3^2+3^2+3^2... or 3*3^2
             }
         }
         return result;
