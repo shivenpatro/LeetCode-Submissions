@@ -24,6 +24,7 @@ Automatically synced LeetCode solutions using LeetHub 3.0.
 | [2267-check-if-there-is-a-valid-parentheses-string-path](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/2267-check-if-there-is-a-valid-parentheses-string-path/) | Hard |
 | [2333-minimum-sum-of-squared-difference](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/2333-minimum-sum-of-squared-difference/) | Medium |
 | [2778-sum-of-squares-of-special-elements](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/2778-sum-of-squares-of-special-elements/) | Easy |
+| [2897-apply-operations-on-array-to-maximize-sum-of-squares](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/2897-apply-operations-on-array-to-maximize-sum-of-squares/) | Hard |
 | [3483-unique-3-digit-even-numbers](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3483-unique-3-digit-even-numbers/) | Easy |
 | [3524-find-x-value-of-array-i](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3524-find-x-value-of-array-i/) | Medium |
 ## Hash Table
@@ -32,6 +33,7 @@ Automatically synced LeetCode solutions using LeetHub 3.0.
 | [0133-clone-graph](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0133-clone-graph/) | Medium |
 | [1477-find-two-non-overlapping-sub-arrays-each-with-target-sum](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum/) | Medium |
 | [1807-evaluate-the-bracket-pairs-of-a-string](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/1807-evaluate-the-bracket-pairs-of-a-string/) | Medium |
+| [2897-apply-operations-on-array-to-maximize-sum-of-squares](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/2897-apply-operations-on-array-to-maximize-sum-of-squares/) | Hard |
 | [3483-unique-3-digit-even-numbers](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3483-unique-3-digit-even-numbers/) | Easy |
 ## Recursion
 | Problem Name | Difficulty |
@@ -186,6 +188,7 @@ Automatically synced LeetCode solutions using LeetHub 3.0.
 | [0921-minimum-add-to-make-parentheses-valid](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0921-minimum-add-to-make-parentheses-valid/) | Medium |
 | [1541-minimum-insertions-to-balance-a-parentheses-string](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/1541-minimum-insertions-to-balance-a-parentheses-string/) | Medium |
 | [2333-minimum-sum-of-squared-difference](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/2333-minimum-sum-of-squared-difference/) | Medium |
+| [2897-apply-operations-on-array-to-maximize-sum-of-squares](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/2897-apply-operations-on-array-to-maximize-sum-of-squares/) | Hard |
 ## Sorting
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -194,4 +197,8 @@ Automatically synced LeetCode solutions using LeetHub 3.0.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [2333-minimum-sum-of-squared-difference](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/2333-minimum-sum-of-squared-difference/) | Medium |
+## Bit Manipulation
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [2897-apply-operations-on-array-to-maximize-sum-of-squares](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/2897-apply-operations-on-array-to-maximize-sum-of-squares/) | Hard |
 <!---LeetCode Topics End-->
