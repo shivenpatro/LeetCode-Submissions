@@ -27,6 +27,7 @@ Automatically synced LeetCode solutions using LeetHub 3.0.
 | [2897-apply-operations-on-array-to-maximize-sum-of-squares](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/2897-apply-operations-on-array-to-maximize-sum-of-squares/) | Hard |
 | [3483-unique-3-digit-even-numbers](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3483-unique-3-digit-even-numbers/) | Easy |
 | [3524-find-x-value-of-array-i](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3524-find-x-value-of-array-i/) | Medium |
+| [3727-maximum-alternating-sum-of-squares](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3727-maximum-alternating-sum-of-squares/) | Medium |
 ## Hash Table
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -189,10 +190,12 @@ Automatically synced LeetCode solutions using LeetHub 3.0.
 | [1541-minimum-insertions-to-balance-a-parentheses-string](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/1541-minimum-insertions-to-balance-a-parentheses-string/) | Medium |
 | [2333-minimum-sum-of-squared-difference](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/2333-minimum-sum-of-squared-difference/) | Medium |
 | [2897-apply-operations-on-array-to-maximize-sum-of-squares](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/2897-apply-operations-on-array-to-maximize-sum-of-squares/) | Hard |
+| [3727-maximum-alternating-sum-of-squares](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3727-maximum-alternating-sum-of-squares/) | Medium |
 ## Sorting
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [2333-minimum-sum-of-squared-difference](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/2333-minimum-sum-of-squared-difference/) | Medium |
+| [3727-maximum-alternating-sum-of-squares](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3727-maximum-alternating-sum-of-squares/) | Medium |
 ## Heap (Priority Queue)
 | Problem Name | Difficulty |
 | ------- | ------- |
