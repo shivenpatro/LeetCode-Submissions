@@ -6,17 +6,14 @@ class Solution {
         // we are given:
         // nums[i] = nums[i] AND nums[j]
         // nums[j] = nums[i] OR nums[j]
-        //
         // trace what happens bit-by-bit:
         // - if both had 0 at some bit pos -> (0 & 0) = 0, (0 | 0) = 0 (bits remain 0)
         // - if both had 1 at some bit pos -> (1 & 1) = 1, (1 | 1) = 1 (bits remain 1)
         // - if one had 1 and one had 0   -> (1 & 0) = 0, (1 | 0) = 1!
-        // 
         // LOOK AT THAT THIRD CASE:
         // the 1 bit literally just moved from nums[i] to nums[j]!
         // it means 1 bits NEVER get destroyed or created out of thin air...
         // we can literally shift '1' bits across elements freely along the same bit position!
-        // 
         // now why concentrate all 1s into one single number?
         // simple math: (x - d)^2 + (y + d)^2 > x^2 + y^2 (when y > x)!
         // squaring heavily rewards making large numbers even LARGER!
