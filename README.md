@@ -27,6 +27,7 @@ Automatically synced LeetCode solutions using LeetHub 3.0.
 | [2778-sum-of-squares-of-special-elements](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/2778-sum-of-squares-of-special-elements/) | Easy |
 | [2897-apply-operations-on-array-to-maximize-sum-of-squares](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/2897-apply-operations-on-array-to-maximize-sum-of-squares/) | Hard |
 | [2913-subarrays-distinct-element-sum-of-squares-i](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/2913-subarrays-distinct-element-sum-of-squares-i/) | Easy |
+| [2916-subarrays-distinct-element-sum-of-squares-ii](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/2916-subarrays-distinct-element-sum-of-squares-ii/) | Hard |
 | [3483-unique-3-digit-even-numbers](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3483-unique-3-digit-even-numbers/) | Easy |
 | [3524-find-x-value-of-array-i](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3524-find-x-value-of-array-i/) | Medium |
 | [3727-maximum-alternating-sum-of-squares](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3727-maximum-alternating-sum-of-squares/) | Medium |
@@ -38,6 +39,7 @@ Automatically synced LeetCode solutions using LeetHub 3.0.
 | [1807-evaluate-the-bracket-pairs-of-a-string](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/1807-evaluate-the-bracket-pairs-of-a-string/) | Medium |
 | [2897-apply-operations-on-array-to-maximize-sum-of-squares](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/2897-apply-operations-on-array-to-maximize-sum-of-squares/) | Hard |
 | [2913-subarrays-distinct-element-sum-of-squares-i](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/2913-subarrays-distinct-element-sum-of-squares-i/) | Easy |
+| [2916-subarrays-distinct-element-sum-of-squares-ii](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/2916-subarrays-distinct-element-sum-of-squares-ii/) | Hard |
 | [3483-unique-3-digit-even-numbers](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3483-unique-3-digit-even-numbers/) | Easy |
 ## Recursion
 | Problem Name | Difficulty |
@@ -212,8 +214,10 @@ Automatically synced LeetCode solutions using LeetHub 3.0.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [2913-subarrays-distinct-element-sum-of-squares-i](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/2913-subarrays-distinct-element-sum-of-squares-i/) | Easy |
+| [2916-subarrays-distinct-element-sum-of-squares-ii](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/2916-subarrays-distinct-element-sum-of-squares-ii/) | Hard |
 ## Segment Tree
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [2913-subarrays-distinct-element-sum-of-squares-i](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/2913-subarrays-distinct-element-sum-of-squares-i/) | Easy |
+| [2916-subarrays-distinct-element-sum-of-squares-ii](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/2916-subarrays-distinct-element-sum-of-squares-ii/) | Hard |
 <!---LeetCode Topics End-->
