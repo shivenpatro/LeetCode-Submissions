@@ -24,6 +24,7 @@ Automatically synced LeetCode solutions using LeetHub 3.0.
 | [1477-find-two-non-overlapping-sub-arrays-each-with-target-sum](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum/) | Medium |
 | [1569-number-of-ways-to-reorder-array-to-get-same-bst](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/1569-number-of-ways-to-reorder-array-to-get-same-bst/) | Hard |
 | [1807-evaluate-the-bracket-pairs-of-a-string](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/1807-evaluate-the-bracket-pairs-of-a-string/) | Medium |
+| [2089-find-target-indices-after-sorting-array](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/2089-find-target-indices-after-sorting-array/) | Easy |
 | [2267-check-if-there-is-a-valid-parentheses-string-path](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/2267-check-if-there-is-a-valid-parentheses-string-path/) | Hard |
 | [2333-minimum-sum-of-squared-difference](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/2333-minimum-sum-of-squared-difference/) | Medium |
 | [2778-sum-of-squares-of-special-elements](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/2778-sum-of-squares-of-special-elements/) | Easy |
@@ -58,6 +59,7 @@ Automatically synced LeetCode solutions using LeetHub 3.0.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1477-find-two-non-overlapping-sub-arrays-each-with-target-sum](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum/) | Medium |
+| [2089-find-target-indices-after-sorting-array](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/2089-find-target-indices-after-sorting-array/) | Easy |
 | [2333-minimum-sum-of-squared-difference](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/2333-minimum-sum-of-squared-difference/) | Medium |
 ## Dynamic Programming
 | Problem Name | Difficulty |
@@ -209,6 +211,7 @@ Automatically synced LeetCode solutions using LeetHub 3.0.
 ## Sorting
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [2089-find-target-indices-after-sorting-array](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/2089-find-target-indices-after-sorting-array/) | Easy |
 | [2333-minimum-sum-of-squared-difference](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/2333-minimum-sum-of-squared-difference/) | Medium |
 | [3551-minimum-swaps-to-sort-by-digit-sum](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3551-minimum-swaps-to-sort-by-digit-sum/) | Medium |
 | [3727-maximum-alternating-sum-of-squares](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3727-maximum-alternating-sum-of-squares/) | Medium |
