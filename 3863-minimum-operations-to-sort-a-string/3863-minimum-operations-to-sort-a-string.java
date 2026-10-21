@@ -50,8 +50,7 @@ class Solution {
         }
         // now if 1 operation wasn't enough...
         // can it be done in 2 operations or does it need 3 operations?
-        // (notice: any string can be sorted in AT MOST 3 operations!)
-        // 
+        // (notice: any string can be sorted in AT MOST 3 operations!), to understand why 2 or max 3.. read below
         // to decide between 2 and 3... look at the middle chunk: indices 1 to n - 2!
         char minMid = 'z';
         char maxMid = 'a';
@@ -80,8 +79,10 @@ class Solution {
             return 3;
         }
         // for all other permutations, 2 operations are always enough:
-        // either min or max can be ferried to its rightful end in step 1, 
+        // either min or max can be moved to its rightful end in step 1, 
         // leaving the remaining (n - 1) characters to be sorted in step 2!
+        // like for sake of example if we take somehting like...rcad...max is at 0 but min is not at last(middle smwhere)
+        // so trace for above one, rcad... we sort rca... a comes to first and rightful place,  acrd.. then sort crd...r comes to last.. final  is acdr.. sorted in 2 steps!! wise versa if min at n-1 and max not at first(middle smwhere)
         return 2;
     }
 }
