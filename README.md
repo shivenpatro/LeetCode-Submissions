@@ -22,6 +22,7 @@ Automatically synced LeetCode solutions using LeetHub 3.0.
 | [0046-permutations](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0046-permutations/) | Medium |
 | [0200-number-of-islands](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0200-number-of-islands/) | Medium |
 | [0994-rotting-oranges](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0994-rotting-oranges/) | Medium |
+| [1254-number-of-closed-islands](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/1254-number-of-closed-islands/) | Medium |
 | [1477-find-two-non-overlapping-sub-arrays-each-with-target-sum](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum/) | Medium |
 | [1569-number-of-ways-to-reorder-array-to-get-same-bst](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/1569-number-of-ways-to-reorder-array-to-get-same-bst/) | Hard |
 | [1807-evaluate-the-bracket-pairs-of-a-string](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/1807-evaluate-the-bracket-pairs-of-a-string/) | Medium |
@@ -124,6 +125,7 @@ Automatically synced LeetCode solutions using LeetHub 3.0.
 | [0200-number-of-islands](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0200-number-of-islands/) | Medium |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0236-lowest-common-ancestor-of-a-binary-tree/) | Medium |
 | [0547-number-of-provinces](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0547-number-of-provinces/) | Medium |
+| [1254-number-of-closed-islands](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/1254-number-of-closed-islands/) | Medium |
 | [1971-find-if-path-exists-in-graph](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/1971-find-if-path-exists-in-graph/) | Easy |
 ## Breadth-First Search
 | Problem Name | Difficulty |
@@ -135,6 +137,7 @@ Automatically synced LeetCode solutions using LeetHub 3.0.
 | [0429-n-ary-tree-level-order-traversal](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0429-n-ary-tree-level-order-traversal/) | Medium |
 | [0547-number-of-provinces](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0547-number-of-provinces/) | Medium |
 | [0994-rotting-oranges](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0994-rotting-oranges/) | Medium |
+| [1254-number-of-closed-islands](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/1254-number-of-closed-islands/) | Medium |
 | [1971-find-if-path-exists-in-graph](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/1971-find-if-path-exists-in-graph/) | Easy |
 ## Binary Tree
 | Problem Name | Difficulty |
@@ -178,6 +181,7 @@ Automatically synced LeetCode solutions using LeetHub 3.0.
 | ------- | ------- |
 | [0200-number-of-islands](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0200-number-of-islands/) | Medium |
 | [0547-number-of-provinces](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0547-number-of-provinces/) | Medium |
+| [1254-number-of-closed-islands](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/1254-number-of-closed-islands/) | Medium |
 | [1569-number-of-ways-to-reorder-array-to-get-same-bst](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/1569-number-of-ways-to-reorder-array-to-get-same-bst/) | Hard |
 | [1971-find-if-path-exists-in-graph](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/1971-find-if-path-exists-in-graph/) | Easy |
 ## Graph Theory
@@ -191,6 +195,7 @@ Automatically synced LeetCode solutions using LeetHub 3.0.
 | ------- | ------- |
 | [0200-number-of-islands](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0200-number-of-islands/) | Medium |
 | [0994-rotting-oranges](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0994-rotting-oranges/) | Medium |
+| [1254-number-of-closed-islands](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/1254-number-of-closed-islands/) | Medium |
 | [2267-check-if-there-is-a-valid-parentheses-string-path](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/2267-check-if-there-is-a-valid-parentheses-string-path/) | Hard |
 ## Bracket Sequences
 | Problem Name | Difficulty |
