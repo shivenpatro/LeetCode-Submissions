@@ -26,7 +26,7 @@ class Solution {
                 // for all other rows.. block everything with '#' first so no shortcut or extra path can form
                 Arrays.fill(row, '#');
                 // then open ONLY the last spot (n - 1) with '.' so we can step down towards (m-1, n-1)
-                row[n - 1] = '.';
+                row[n - 1] = '.';//just every end of the row.. put  "".""   normal reverse L approach
             }
             // convert the char array to string for this row and we're done
             grid[i] = new String(row);
