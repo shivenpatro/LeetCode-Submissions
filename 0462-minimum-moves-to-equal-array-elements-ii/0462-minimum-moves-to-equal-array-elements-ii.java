@@ -1,33 +1,24 @@
 //better solution
-import java.util.Random;
-
 class Solution {
     Random rand = new Random();
-
     public int minMoves2(int[] nums) {
         /* now think.. do we actually need to sort the ENTIRE array just to get the median at index n / 2? not at all! sorting costs O(N log N) time, but all we care about is finding the single element that WOULD sit at index n / 2 if the array were sorted! in c++ they have std::nth_element, but in java we can just write Quickselect (the partitioning logic from quicksort). quickselect finds the k-th smallest element in O(N) average time by picking a pivot, partitioning elements smaller to the left and larger to the right, and only recursing into the half where index k lies! once the median is placed at index n / 2, we just run a single linear pass to sum up Math.abs(nums[i] - median) in total O(N) time without full sorting, simple na! */
-
         int n = nums.length;
         int targetIdx = n / 2;
         int median = quickSelect(nums, 0, n - 1, targetIdx); // find the element that belongs at index n / 2
-
         int moves = 0;
         /* calculate total moves to bring every element to the median */
         for (int num : nums) {
             moves += Math.abs(num - median);
         }
-
         return moves;
     }
-
     /* standard quickselect to partition and isolate the k-th indexed element in O(N) average time */
     private int quickSelect(int[] nums, int left, int right, int k) {
         if (left == right) return nums[left];
-
         /* pick a random pivot to avoid worst-case O(N^2) on already sorted or repeated testcases */
         int pivotIndex = left + rand.nextInt(right - left + 1);
         pivotIndex = partition(nums, left, right, pivotIndex);
-
         if (k == pivotIndex) {
             return nums[k]; // found the exact median element!
         } else if (k < pivotIndex) {
@@ -36,24 +27,20 @@ class Solution {
             return quickSelect(nums, pivotIndex + 1, right, k); // target lies in right partition
         }
     }
-
     /* lomuto-style partition placing pivot in its final sorted position with smaller elements on left and larger on right */
     private int partition(int[] nums, int left, int right, int pivotIndex) {
         int pivotValue = nums[pivotIndex];
         swap(nums, pivotIndex, right); // move pivot temporarily to the end
         int storeIdx = left;
-
         for (int i = left; i < right; i++) {
             if (nums[i] < pivotValue) {
                 swap(nums, storeIdx, i);
                 storeIdx++;
             }
         }
-
         swap(nums, storeIdx, right); // move pivot back to its final resting spot
         return storeIdx;
     }
-
     private void swap(int[] nums, int i, int j) {
         int temp = nums[i];
         nums[i] = nums[j];
