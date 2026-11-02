@@ -1,4 +1,4 @@
-//better solution
+//another approach
 class Solution {
     Random rand = new Random();
     public int minMoves2(int[] nums) {
