@@ -8,6 +8,7 @@ Automatically synced LeetCode solutions using LeetHub 3.0.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0453-minimum-moves-to-equal-array-elements](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0453-minimum-moves-to-equal-array-elements/) | Medium |
+| [0462-minimum-moves-to-equal-array-elements-ii](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0462-minimum-moves-to-equal-array-elements-ii/) | Medium |
 | [0836-rectangle-overlap](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0836-rectangle-overlap/) | Easy |
 | [1569-number-of-ways-to-reorder-array-to-get-same-bst](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/1569-number-of-ways-to-reorder-array-to-get-same-bst/) | Hard |
 | [2409-count-days-spent-together](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/2409-count-days-spent-together/) | Easy |
@@ -25,6 +26,7 @@ Automatically synced LeetCode solutions using LeetHub 3.0.
 | [0088-merge-sorted-array](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0088-merge-sorted-array/) | Easy |
 | [0200-number-of-islands](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0200-number-of-islands/) | Medium |
 | [0453-minimum-moves-to-equal-array-elements](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0453-minimum-moves-to-equal-array-elements/) | Medium |
+| [0462-minimum-moves-to-equal-array-elements-ii](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0462-minimum-moves-to-equal-array-elements-ii/) | Medium |
 | [0994-rotting-oranges](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0994-rotting-oranges/) | Medium |
 | [1254-number-of-closed-islands](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/1254-number-of-closed-islands/) | Medium |
 | [1477-find-two-non-overlapping-sub-arrays-each-with-target-sum](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum/) | Medium |
@@ -239,6 +241,7 @@ Automatically synced LeetCode solutions using LeetHub 3.0.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0088-merge-sorted-array](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0088-merge-sorted-array/) | Easy |
+| [0462-minimum-moves-to-equal-array-elements-ii](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0462-minimum-moves-to-equal-array-elements-ii/) | Medium |
 | [2089-find-target-indices-after-sorting-array](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/2089-find-target-indices-after-sorting-array/) | Easy |
 | [2333-minimum-sum-of-squared-difference](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/2333-minimum-sum-of-squared-difference/) | Medium |
 | [3551-minimum-swaps-to-sort-by-digit-sum](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3551-minimum-swaps-to-sort-by-digit-sum/) | Medium |
