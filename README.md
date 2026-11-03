@@ -95,6 +95,7 @@ Automatically synced LeetCode solutions using LeetHub 3.0.
 | ------- | ------- |
 | [0022-generate-parentheses](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0022-generate-parentheses/) | Medium |
 | [0032-longest-valid-parentheses](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0032-longest-valid-parentheses/) | Hard |
+| [0058-length-of-last-word](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0058-length-of-last-word/) | Easy |
 | [0301-remove-invalid-parentheses](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0301-remove-invalid-parentheses/) | Hard |
 | [0856-score-of-parentheses](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0856-score-of-parentheses/) | Medium |
 | [0921-minimum-add-to-make-parentheses-valid](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0921-minimum-add-to-make-parentheses-valid/) | Medium |
