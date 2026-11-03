@@ -1,5 +1,5 @@
 //first appraoch... way i did after covering edge cases and all.. easy  only but below is an easire approach.. 
-class Solution {
+/*class Solution {
     public int lengthOfLastWord(String s) {
         String p = s.trim();//trim to remove first and last spaces
         int n = p.length();
@@ -18,5 +18,21 @@ class Solution {
             int m = p.substring(pos,n-1).length()+1;//when not space
             return m;
         }
+    }
+}*/
+//second simpler easier approach
+class Solution {
+    public int lengthOfLastWord(String s) {
+        int n = s.length();
+        int i = n - 1;//goes from back
+        int len = 0;//will count the length of last word
+        while(i >= 0 && s.charAt(i) == ' '){
+            i--;//see see.. if there is a string which has space after the last word... we will make the i move from end to the last letter of last word.. evidently skip all the spaces after the last word thats all
+        }
+        while(i >= 0 && s.charAt(i) != ' '){
+            len++;//now after the above loop.. if the string has spaces after last word... like "  i like  "...i will be at position of e of last word(like)... end letter of end word.. and if no space.. then by default endletter of end word... so fione only.. just do i-- adnd len++... till we find again " "... and then return lenght!!!! simplee!!
+            i--;
+        }
+        return len;
     }
 }
