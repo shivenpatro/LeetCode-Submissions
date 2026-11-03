@@ -14,6 +14,7 @@ Automatically synced LeetCode solutions using LeetHub 3.0.
 | [2409-count-days-spent-together](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/2409-count-days-spent-together/) | Easy |
 | [3524-find-x-value-of-array-i](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3524-find-x-value-of-array-i/) | Medium |
 | [3723-maximize-sum-of-squares-of-digits](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3723-maximize-sum-of-squares-of-digits/) | Medium |
+| [3736-minimum-moves-to-equal-array-elements-iii](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3736-minimum-moves-to-equal-array-elements-iii/) | Easy |
 | [3886-sum-of-sortable-integers](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3886-sum-of-sortable-integers/) | Hard |
 ## Geometry
 | Problem Name | Difficulty |
@@ -45,6 +46,7 @@ Automatically synced LeetCode solutions using LeetHub 3.0.
 | [3619-count-islands-with-total-value-divisible-by-k](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3619-count-islands-with-total-value-divisible-by-k/) | Medium |
 | [3644-maximum-k-to-sort-a-permutation](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3644-maximum-k-to-sort-a-permutation/) | Medium |
 | [3727-maximum-alternating-sum-of-squares](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3727-maximum-alternating-sum-of-squares/) | Medium |
+| [3736-minimum-moves-to-equal-array-elements-iii](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3736-minimum-moves-to-equal-array-elements-iii/) | Easy |
 | [3841-palindromic-path-queries-in-a-tree](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3841-palindromic-path-queries-in-a-tree/) | Hard |
 | [3886-sum-of-sortable-integers](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3886-sum-of-sortable-integers/) | Hard |
 | [3942-minimum-operations-to-sort-a-permutation](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3942-minimum-operations-to-sort-a-permutation/) | Medium |
