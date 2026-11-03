@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 class Solution {
     public int minMoves(int[] nums) {
         /* so see.. what is the problem asking us? we are given an integer array nums of size n, and in one move we can increment n - 1 elements by 1. our goal is to find the minimum number of moves required to make all elements equal. 
