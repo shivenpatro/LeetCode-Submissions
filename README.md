@@ -12,6 +12,7 @@ Automatically synced LeetCode solutions using LeetHub 3.0.
 | [0836-rectangle-overlap](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/0836-rectangle-overlap/) | Easy |
 | [1569-number-of-ways-to-reorder-array-to-get-same-bst](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/1569-number-of-ways-to-reorder-array-to-get-same-bst/) | Hard |
 | [2409-count-days-spent-together](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/2409-count-days-spent-together/) | Easy |
+| [3505-minimum-operations-to-make-elements-within-k-subarrays-equal](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3505-minimum-operations-to-make-elements-within-k-subarrays-equal/) | Hard |
 | [3524-find-x-value-of-array-i](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3524-find-x-value-of-array-i/) | Medium |
 | [3723-maximize-sum-of-squares-of-digits](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3723-maximize-sum-of-squares-of-digits/) | Medium |
 | [3736-minimum-moves-to-equal-array-elements-iii](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3736-minimum-moves-to-equal-array-elements-iii/) | Easy |
@@ -41,6 +42,7 @@ Automatically synced LeetCode solutions using LeetHub 3.0.
 | [2913-subarrays-distinct-element-sum-of-squares-i](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/2913-subarrays-distinct-element-sum-of-squares-i/) | Easy |
 | [2916-subarrays-distinct-element-sum-of-squares-ii](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/2916-subarrays-distinct-element-sum-of-squares-ii/) | Hard |
 | [3483-unique-3-digit-even-numbers](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3483-unique-3-digit-even-numbers/) | Easy |
+| [3505-minimum-operations-to-make-elements-within-k-subarrays-equal](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3505-minimum-operations-to-make-elements-within-k-subarrays-equal/) | Hard |
 | [3524-find-x-value-of-array-i](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3524-find-x-value-of-array-i/) | Medium |
 | [3551-minimum-swaps-to-sort-by-digit-sum](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3551-minimum-swaps-to-sort-by-digit-sum/) | Medium |
 | [3619-count-islands-with-total-value-divisible-by-k](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3619-count-islands-with-total-value-divisible-by-k/) | Medium |
@@ -60,6 +62,7 @@ Automatically synced LeetCode solutions using LeetHub 3.0.
 | [2913-subarrays-distinct-element-sum-of-squares-i](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/2913-subarrays-distinct-element-sum-of-squares-i/) | Easy |
 | [2916-subarrays-distinct-element-sum-of-squares-ii](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/2916-subarrays-distinct-element-sum-of-squares-ii/) | Hard |
 | [3483-unique-3-digit-even-numbers](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3483-unique-3-digit-even-numbers/) | Easy |
+| [3505-minimum-operations-to-make-elements-within-k-subarrays-equal](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3505-minimum-operations-to-make-elements-within-k-subarrays-equal/) | Hard |
 | [3551-minimum-swaps-to-sort-by-digit-sum](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3551-minimum-swaps-to-sort-by-digit-sum/) | Medium |
 ## Recursion
 | Problem Name | Difficulty |
@@ -85,11 +88,13 @@ Automatically synced LeetCode solutions using LeetHub 3.0.
 | [1477-find-two-non-overlapping-sub-arrays-each-with-target-sum](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum/) | Medium |
 | [1569-number-of-ways-to-reorder-array-to-get-same-bst](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/1569-number-of-ways-to-reorder-array-to-get-same-bst/) | Hard |
 | [2267-check-if-there-is-a-valid-parentheses-string-path](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/2267-check-if-there-is-a-valid-parentheses-string-path/) | Hard |
+| [3505-minimum-operations-to-make-elements-within-k-subarrays-equal](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3505-minimum-operations-to-make-elements-within-k-subarrays-equal/) | Hard |
 | [3524-find-x-value-of-array-i](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3524-find-x-value-of-array-i/) | Medium |
 ## Sliding Window
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1477-find-two-non-overlapping-sub-arrays-each-with-target-sum](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum/) | Medium |
+| [3505-minimum-operations-to-make-elements-within-k-subarrays-equal](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3505-minimum-operations-to-make-elements-within-k-subarrays-equal/) | Hard |
 ## String
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -254,6 +259,7 @@ Automatically synced LeetCode solutions using LeetHub 3.0.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [2333-minimum-sum-of-squared-difference](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/2333-minimum-sum-of-squared-difference/) | Medium |
+| [3505-minimum-operations-to-make-elements-within-k-subarrays-equal](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3505-minimum-operations-to-make-elements-within-k-subarrays-equal/) | Hard |
 | [3970-shortest-path-with-at-most-k-consecutive-identical-characters](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3970-shortest-path-with-at-most-k-consecutive-identical-characters/) | Medium |
 ## Bit Manipulation
 | Problem Name | Difficulty |
