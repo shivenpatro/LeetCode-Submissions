@@ -1,6 +1,6 @@
 class Solution {
     public long countNonDecreasingSubarrays(int[] nums, int k) {
-        /* ok so see.. what is this problem actually asking? we are given an integer array nums and an integer k. for any subarray, we can increment elements by 1 up to k times total (independently for each subarray) to make it non-decreasing (every element >= previous element). our goal is to count how many subarrays can be made non-decreasing within at most k operations! */
+        /* so fr this problem.. what is this problem actually asking? we are given an integer array nums and an integer k. for any subarray, we can increment elements by 1 up to k times total (independently for each subarray) to make it non-decreasing (every element >= previous element). our goal is to count how many subarrays can be made non-decreasing within at most k operations! */
 
         /* why does brute force TLE? because N goes up to 10^5, so checking all O(N^2) subarrays is impossible. now notice a crucial monotonic property: if a subarray nums[i..j] can be made non-decreasing in <= k operations, then ANY smaller suffix subarray ending at j (like nums[i+1..j], nums[i+2..j], ..., nums[j..j]) can ALSO be made non-decreasing in <= k operations! why? because dropping elements from the left only removes elements or reduces the prefix maximums that later elements had to climb up to! so once we find a valid window [i..j], ALL (j - i + 1) subarrays ending at j are immediately valid! this screams two-pointer Sliding Window! */
 
