@@ -37,6 +37,7 @@ Automatically synced LeetCode solutions using LeetHub 3.0.
 | [1569-number-of-ways-to-reorder-array-to-get-same-bst](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/1569-number-of-ways-to-reorder-array-to-get-same-bst/) | Hard |
 | [1807-evaluate-the-bracket-pairs-of-a-string](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/1807-evaluate-the-bracket-pairs-of-a-string/) | Medium |
 | [1882-process-tasks-using-servers](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/1882-process-tasks-using-servers/) | Medium |
+| [1920-build-array-from-permutation](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/1920-build-array-from-permutation/) | Easy |
 | [2089-find-target-indices-after-sorting-array](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/2089-find-target-indices-after-sorting-array/) | Easy |
 | [2267-check-if-there-is-a-valid-parentheses-string-path](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/2267-check-if-there-is-a-valid-parentheses-string-path/) | Hard |
 | [2333-minimum-sum-of-squared-difference](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/2333-minimum-sum-of-squared-difference/) | Medium |
@@ -124,6 +125,7 @@ Automatically synced LeetCode solutions using LeetHub 3.0.
 ## Simulation
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [1920-build-array-from-permutation](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/1920-build-array-from-permutation/) | Easy |
 | [3498-reverse-degree-of-a-string](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3498-reverse-degree-of-a-string/) | Easy |
 ## Backtracking
 | Problem Name | Difficulty |
