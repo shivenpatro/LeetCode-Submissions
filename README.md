@@ -124,6 +124,7 @@ Automatically synced LeetCode solutions using LeetHub 3.0.
 | [1541-minimum-insertions-to-balance-a-parentheses-string](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/1541-minimum-insertions-to-balance-a-parentheses-string/) | Medium |
 | [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/1614-maximum-nesting-depth-of-the-parentheses/) | Easy |
 | [1807-evaluate-the-bracket-pairs-of-a-string](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/1807-evaluate-the-bracket-pairs-of-a-string/) | Medium |
+| [2243-calculate-digit-sum-of-a-string](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/2243-calculate-digit-sum-of-a-string/) | Easy |
 | [2409-count-days-spent-together](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/2409-count-days-spent-together/) | Easy |
 | [3498-reverse-degree-of-a-string](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3498-reverse-degree-of-a-string/) | Easy |
 | [3841-palindromic-path-queries-in-a-tree](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3841-palindromic-path-queries-in-a-tree/) | Hard |
@@ -133,6 +134,7 @@ Automatically synced LeetCode solutions using LeetHub 3.0.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1920-build-array-from-permutation](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/1920-build-array-from-permutation/) | Easy |
+| [2243-calculate-digit-sum-of-a-string](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/2243-calculate-digit-sum-of-a-string/) | Easy |
 | [3498-reverse-degree-of-a-string](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3498-reverse-degree-of-a-string/) | Easy |
 ## Backtracking
 | Problem Name | Difficulty |
