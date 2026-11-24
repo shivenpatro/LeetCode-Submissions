@@ -14,6 +14,7 @@ Automatically synced LeetCode solutions using LeetHub 3.0.
 | [1524-number-of-sub-arrays-with-odd-sum](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/1524-number-of-sub-arrays-with-odd-sum/) | Medium |
 | [1569-number-of-ways-to-reorder-array-to-get-same-bst](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/1569-number-of-ways-to-reorder-array-to-get-same-bst/) | Hard |
 | [2409-count-days-spent-together](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/2409-count-days-spent-together/) | Easy |
+| [3411-maximum-subarray-with-equal-products](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3411-maximum-subarray-with-equal-products/) | Easy |
 | [3505-minimum-operations-to-make-elements-within-k-subarrays-equal](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3505-minimum-operations-to-make-elements-within-k-subarrays-equal/) | Hard |
 | [3524-find-x-value-of-array-i](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3524-find-x-value-of-array-i/) | Medium |
 | [3723-maximize-sum-of-squares-of-digits](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3723-maximize-sum-of-squares-of-digits/) | Medium |
@@ -51,6 +52,7 @@ Automatically synced LeetCode solutions using LeetHub 3.0.
 | [2916-subarrays-distinct-element-sum-of-squares-ii](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/2916-subarrays-distinct-element-sum-of-squares-ii/) | Hard |
 | [3105-longest-strictly-increasing-or-strictly-decreasing-subarray](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3105-longest-strictly-increasing-or-strictly-decreasing-subarray/) | Easy |
 | [3364-minimum-positive-sum-subarray](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3364-minimum-positive-sum-subarray/) | Easy |
+| [3411-maximum-subarray-with-equal-products](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3411-maximum-subarray-with-equal-products/) | Easy |
 | [3420-count-non-decreasing-subarrays-after-k-operations](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3420-count-non-decreasing-subarrays-after-k-operations/) | Hard |
 | [3483-unique-3-digit-even-numbers](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3483-unique-3-digit-even-numbers/) | Easy |
 | [3505-minimum-operations-to-make-elements-within-k-subarrays-equal](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3505-minimum-operations-to-make-elements-within-k-subarrays-equal/) | Hard |
@@ -84,6 +86,7 @@ Automatically synced LeetCode solutions using LeetHub 3.0.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [2778-sum-of-squares-of-special-elements](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/2778-sum-of-squares-of-special-elements/) | Easy |
+| [3411-maximum-subarray-with-equal-products](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3411-maximum-subarray-with-equal-products/) | Easy |
 | [3483-unique-3-digit-even-numbers](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3483-unique-3-digit-even-numbers/) | Easy |
 | [3886-sum-of-sortable-integers](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3886-sum-of-sortable-integers/) | Hard |
 ## Binary Search
@@ -110,6 +113,7 @@ Automatically synced LeetCode solutions using LeetHub 3.0.
 | ------- | ------- |
 | [1477-find-two-non-overlapping-sub-arrays-each-with-target-sum](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum/) | Medium |
 | [3364-minimum-positive-sum-subarray](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3364-minimum-positive-sum-subarray/) | Easy |
+| [3411-maximum-subarray-with-equal-products](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3411-maximum-subarray-with-equal-products/) | Easy |
 | [3420-count-non-decreasing-subarrays-after-k-operations](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3420-count-non-decreasing-subarrays-after-k-operations/) | Hard |
 | [3505-minimum-operations-to-make-elements-within-k-subarrays-equal](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3505-minimum-operations-to-make-elements-within-k-subarrays-equal/) | Hard |
 ## String
@@ -364,4 +368,8 @@ Automatically synced LeetCode solutions using LeetHub 3.0.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1352-product-of-the-last-k-numbers](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/1352-product-of-the-last-k-numbers/) | Medium |
+## Number Theory
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3411-maximum-subarray-with-equal-products](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3411-maximum-subarray-with-equal-products/) | Easy |
 <!---LeetCode Topics End-->
