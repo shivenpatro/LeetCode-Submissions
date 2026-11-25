@@ -66,6 +66,7 @@ Automatically synced LeetCode solutions using LeetHub 3.0.
 | [3736-minimum-moves-to-equal-array-elements-iii](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3736-minimum-moves-to-equal-array-elements-iii/) | Easy |
 | [3841-palindromic-path-queries-in-a-tree](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3841-palindromic-path-queries-in-a-tree/) | Hard |
 | [3886-sum-of-sortable-integers](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3886-sum-of-sortable-integers/) | Hard |
+| [3934-smallest-unique-subarray](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3934-smallest-unique-subarray/) | Hard |
 | [3942-minimum-operations-to-sort-a-permutation](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3942-minimum-operations-to-sort-a-permutation/) | Medium |
 ## Hash Table
 | Problem Name | Difficulty |
@@ -80,6 +81,7 @@ Automatically synced LeetCode solutions using LeetHub 3.0.
 | [3483-unique-3-digit-even-numbers](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3483-unique-3-digit-even-numbers/) | Easy |
 | [3505-minimum-operations-to-make-elements-within-k-subarrays-equal](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3505-minimum-operations-to-make-elements-within-k-subarrays-equal/) | Hard |
 | [3551-minimum-swaps-to-sort-by-digit-sum](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3551-minimum-swaps-to-sort-by-digit-sum/) | Medium |
+| [3934-smallest-unique-subarray](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3934-smallest-unique-subarray/) | Hard |
 ## Recursion
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -97,6 +99,7 @@ Automatically synced LeetCode solutions using LeetHub 3.0.
 | [1477-find-two-non-overlapping-sub-arrays-each-with-target-sum](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum/) | Medium |
 | [2089-find-target-indices-after-sorting-array](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/2089-find-target-indices-after-sorting-array/) | Easy |
 | [2333-minimum-sum-of-squared-difference](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/2333-minimum-sum-of-squared-difference/) | Medium |
+| [3934-smallest-unique-subarray](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3934-smallest-unique-subarray/) | Hard |
 ## Dynamic Programming
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -377,4 +380,16 @@ Automatically synced LeetCode solutions using LeetHub 3.0.
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [3411-maximum-subarray-with-equal-products](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3411-maximum-subarray-with-equal-products/) | Easy |
+## Rolling Hash
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3934-smallest-unique-subarray](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3934-smallest-unique-subarray/) | Hard |
+## Suffix Array
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3934-smallest-unique-subarray](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3934-smallest-unique-subarray/) | Hard |
+## Hash Function
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3934-smallest-unique-subarray](https://github.com/shivenpatro/LeetCode-Submissions/tree/main/3934-smallest-unique-subarray/) | Hard |
 <!---LeetCode Topics End-->
